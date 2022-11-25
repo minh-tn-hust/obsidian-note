@@ -1,3 +1,3 @@
 git add *
 git commit -F .gitcommit
-code .gitcommit
+START /wait nvim .gitcommit
