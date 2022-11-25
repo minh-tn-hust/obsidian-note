@@ -1,3 +1,4 @@
 git add *
-git commit -F .gitcommit
 START /wait nvim .gitcommit
+git commit -F .gitcommit
+git push
