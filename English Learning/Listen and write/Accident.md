@@ -1,0 +1,8 @@
+# [Link](https://listenaminute.com/a/accidents.html)
+
+Listen a minute.com
+I wonder how many **accident**==(s)== **all a have**(I've had) in my life. I **had**==(I've had)== a few serious ones where **I**==I've== ended it up in hospital. Traffic **accident**==(s)== are the **worse**==worst==, they are always painful. I **have**==(haven't)== had **too** many **work relative**==(work-related)== accident. I suppose that because i do office work and that's not so dangerous. Most of my **accident**==(s)== are ==(those)== around the house. I **...**==I've lost== count the number of times hit the thump with a hammer. I==(I've)== also really good at standing out and hitting my head on something.  I==('m)== not as **best**==(bad)== as my friend know==(though)==.  He's ==a real accident== looking for somewhere to happen. Almost every time we meet he has some stories to tell about his relative==(latest)== accident. He's quite unbelivable. I think I==('d)== be very worry(worried) if i were his mother
+
+# Scription
+I wonder how many accidents I’ve had in my life. I’ve had a few serious ones where I’ve ended up in hospital. Traffic accidents are the worst. They’re always painful. I haven’t had too many work-related accidents. I suppose that’s because I do office work and that’s not so dangerous. Most of my accidents are those around the house. I’ve lost count of the number of times I’ve hit my thumb with a hammer. I’m also really good at standing up and hitting my head on something. I’m not as bad as my friend though. He’s a real accident looking for somewhere to happen. Almost every time we meet, he has some story to tell about his latest accident. He’s quite unbelievable. I think I’d be very worried if I were his mother.
+

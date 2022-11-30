@@ -1,6 +1,6 @@
 # Luồng kịch bản
 	1. UC : tên use case
-	2. Mô tả ngắn : giải thích hành động ủa use case
+	2. Mô tả ngắn : giải thích hành động của use case
 	3. input : các thông tni đầu vào 
 	4. output : đầu ra của usecase
 	5. tien_dieu_kien : các điều kiện để có thể thực hiện usecase
