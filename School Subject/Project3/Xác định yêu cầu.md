@@ -321,8 +321,6 @@
 		4. Hệ thống hiển thị kết quả và cập nhật bảng rank của kì thi hiện tại
 
 
----
-
 #### Xem bảng rank của kì thi
 	UC : Xem bảng rank của kì thi
 	Miêu tả : Người dùng muốn xem bảng rank của kì thi

@@ -1,62 +1,39 @@
 {
   "main": {
-    "id": "b1c1c62459044127",
+    "id": "ee52ac5c5d498ea2",
     "type": "split",
     "children": [
       {
-        "id": "172f5bbf3ace504a",
+        "id": "2345a6780408a43f",
         "type": "tabs",
         "children": [
           {
-            "id": "a8587c20d453f92e",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "Project3/Image/Usecase Diagram/Quản lý bài thi.png"
-              }
-            }
-          },
-          {
-            "id": "32be96d350714b9b",
+            "id": "dcdcd4fc80205746",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Project3/Xác định yêu cầu.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "b79fdf911b725f6b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Project3/Xác định yêu cầu.md",
+                "file": "React/Redux.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
   },
   "left": {
-    "id": "4398974188b7e71d",
+    "id": "5667a29ed5228d9f",
     "type": "split",
     "children": [
       {
-        "id": "93d4203c79a8369a",
+        "id": "4b9fb43f4836ea72",
         "type": "tabs",
         "children": [
           {
-            "id": "641d6e06ae30e689",
+            "id": "ad340da57b52b690",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -66,22 +43,22 @@
             }
           },
           {
-            "id": "4e81ecae61e9ca66",
+            "id": "04c13033169d31c0",
             "type": "leaf",
             "state": {
               "type": "search",
               "state": {
                 "query": "",
-                "matchingCase": true,
+                "matchingCase": false,
                 "explainSearch": false,
-                "collapseAll": true,
+                "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
               }
             }
           },
           {
-            "id": "024dd44b76415524",
+            "id": "a64ce348800b6cf5",
             "type": "leaf",
             "state": {
               "type": "starred",
@@ -92,23 +69,24 @@
       }
     ],
     "direction": "horizontal",
-    "width": 271.5
+    "width": 300,
+    "collapsed": true
   },
   "right": {
-    "id": "04bc5fc1716cb275",
+    "id": "a4312d544d348d74",
     "type": "split",
     "children": [
       {
-        "id": "5a519b2c442d29b7",
+        "id": "33e4e3407afb030d",
         "type": "tabs",
         "children": [
           {
-            "id": "7c6dc3f1e7302b2a",
+            "id": "5c4c88a68975ecb7",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Project3/Xác định yêu cầu.md",
+                "file": "React/Redux.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -120,19 +98,19 @@
             }
           },
           {
-            "id": "31f8bbf94d296d45",
+            "id": "35403d22d54b9224",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Project3/Xác định yêu cầu.md",
+                "file": "React/Redux.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
           },
           {
-            "id": "3cb171dabc9cbf3f",
+            "id": "220449f4230d8789",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -143,12 +121,12 @@
             }
           },
           {
-            "id": "39e6d530eb53c2c3",
+            "id": "4945b2b5fff2c7b6",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "Project3/Xác định yêu cầu.md"
+                "file": "React/Redux.md"
               }
             }
           }
@@ -159,17 +137,15 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "b79fdf911b725f6b",
+  "active": "dcdcd4fc80205746",
   "lastOpenFiles": [
-    "Project3/Project 3.md",
-    "Trải nghiệm và giao diện người dùng/Phân tích nhiệm vụ.md",
-    "Project3/Xác định yêu cầu.md",
-    "Thiết kế và xây dựng phần mềm/Thiết kế và xây dựng phần mềm.md",
-    "Project3/Image/Usecase Diagram/Quản lý bài thi.png",
-    "Project3/Image/Usecase Diagram/Quản lý kì thi.png",
-    "Xác định yêu cầu.pdf",
-    "Project3/Image/Usecase Diagram/Usecase tổng quan.png",
-    "Thiết kế và xây dựng phần mềm/Bài tập lớn.md",
-    "Thiết kế và xây dựng phần mềm/Xác định các phần tử thiết kế.md"
+    "Listen and write/Advice.md",
+    "Listen and write/Advertising.md",
+    "Listen and write/Actors.md",
+    "Listen and write/Accident.md",
+    "New word/New word.md",
+    "Listen and write/Garage Sales, American Football.md",
+    "MongoDB.md",
+    "Ứng dụng đa nền tảng.md"
   ]
 }
