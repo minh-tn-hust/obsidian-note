@@ -14,7 +14,7 @@
 #### Tiêu chí xác định các lớp có liên quan đến nhau về mặt chức năng hay không
 - Những **thay đổi về hành vi và/hoặc cấu trúc** của một lớp đòi hỏi những thay đổi trong lớp khác
 - Loại bỏ một lớp ảnh hưởng đến lớp khác
-- Hai **đối tượng tương tác với số lượng lớn các thông điệm** hoặc có giao tiếp phức tạp
+	- Hai **đối tượng tương tác với số lượng lớn các thông điệp** hoặc có giao tiếp phức tạp
 - Một lớp biên có thể liên quan về mặt chức năng với một lớp thực thể củ thể nếu chức năng lớp biên là thể hiện lớp thực thể
 - Hai lớp có mối quan hệ với nhau
 - Một lớp tạo instance của lớp khác

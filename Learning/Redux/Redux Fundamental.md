@@ -156,4 +156,21 @@ const currentValue = selectCounterValue(store.getState())
 
 # Redux Application Data Flow
 
-
+Trước đó chugns ta đã nói về "one-wayj data flow" - miêu tả chuỗi các bước để thực hiện cập nhật trong app
+- State miêu tả tình trạng hiện của app tại một thời điểm
+- UI hiển thị dựa trên state
+- Khi một hứ gì đó thayd dổi, trạng thái được cập nhật dựa trên cái gì đang diễn ra
+- UI thực hiện rerender dựa trên trạng thái mới
+Với Redux, chúng ta có thể chia nỏ các bước vào các thông tin chi tiết sau
+- Initial setup:
+	- Một Redux store được tạo sử dụng hàm reducer gốc
+	- Store gọi hàm reducer gốc một lần và thực hiện lưu giá trị trả về như là giá trị state khởi đầu
+	- Khi thành phần UI lần đầu được render, UI Component truy cập vào state hiện tại của Redux store, và sử dụng data đó để quyết định cái gì được hiển thị. Chúng cũng thực hiện đăng kí để khi sotre update trong tương lai, chugns có thể biết nếu như trạng thái thay đổi
+- Update
+	- Một thứ gì đó xảy ra bên trong app (ví dụ như click vào một button)
+	- App dispatche ra một hành động tới Redux store, kiểu như ```JS dispatch({type : 'counter/increment'})```
+	- Store chạy hàm reducer lại một lần nữa với trạng thái trước đó và hành độn hiện tại, lưu và trả về một trạng thái mới
+	- Store lại thông báo cho tất cả các htnahf phàn UI mà đã đăng kí lắng nghe khi store cập nhật
+	- Mỗi thành phần Ui cần dât từ store thực hiện check lại để xem thử xem trạn thái mà chúng cần có được thay đổi hay không
+	- Mỗi thành phần sẽ thấy dât được thay đôi và thực hiện forece re-render với dât mới, chugsn có thể update những gì mà chúng hiển thị trên màn hình]
+Dưới đây là cách mà dataflow hoạt động![[reduxdataflowdiagram-49fa8c3968371d9ef6f2a1486bd40a26.gif]]
