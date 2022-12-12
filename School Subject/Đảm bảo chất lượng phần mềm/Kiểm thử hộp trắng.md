@@ -37,9 +37,6 @@ Lớp tương đương
 - Female Age [86, 99]
 4TC Valid, 2TC Invalid
 
-
-
-
 ### Kiểm thử hộp trắng
 > Sơ đồ luồng điều khiển
 > ![[Pasted image 20221205132011.png]]

@@ -18,7 +18,20 @@
 	Invalid username : 0 -> 2 || >= 15, có trắng, hoặc #, hoặc $, hoặc @ hoặc là trống
 	Valid password : nhiều hơn 8 kí tự && kí tự đầu tiên không phải là 0
 	Invalid password : kí tự đầu tiên là 0 hoặc là ít hơn 8 kí tự  hoặc là trống hoặc là chứa kí tự khác số
-
+Miền dữ liệu
+username : [3, 15] kí tự, không chứa #, $, @
+	valid : [3, 15] kí tự, không chứa #, $, @
+	invalid : < 3, > 15 và có chúa kí tự đặc biệt
+-> EC của username
+	- 3 kí tự | 15 kí tự + không chứa kí tự đặc biệt
+	- 2 kí tự, no special character : ab
+	- 16 kí tự : 
+	- 4 trường hợp các kí tự đặc biệt : 
+password : ít nhất 8 kí tự, không chứa kí tự 0
+	valid: ít nhất 8 kí tự, không chứa kí tự 0
+	invalid: ít hơn 8 kí tự hoặc có kí tự 0
+Valid :
+Invalid :
 
 |Num|Username |Password|Result|
 |-----|------------|-----------|-------|

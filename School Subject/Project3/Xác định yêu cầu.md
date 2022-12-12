@@ -50,8 +50,6 @@
 ![[Quản lý bài thi.png]]
 
 ---
-
-
 # Luồng kịch bản
 ## Người quản lý
 ### Quản lý bài thi
@@ -367,7 +365,16 @@
 		4. Hệ thống thực hiện hiển thị theo các yêu cầu
 	Luồng phụ : Không có
 	
-	
+
+
+--- 
+
+## Hệ thống máy chấm
+#### Chấm bài
+#### Xuất thông tin về bài chấm
+#### Tạo máy ảo chấm bài
+#### Quản lý máy chấm
+
 # Quy trình hoạt động
 ## Người quản lý
 ### Quản lý bài thi
@@ -388,13 +395,11 @@
 #### Xem các bảng rank của kì thi
 #### Xem danh sách các bài thi
 #### Filter đề thi
+---
 # Biểu đồ sequence
-
 ---
 # Biểu đồ giao tiếp
 ---
-
-
 # Biểu đồ lớp phân tích
 ---
 # Biểu đồ lớp thiết kế

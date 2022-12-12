@@ -4,44 +4,35 @@
     "type": "split",
     "children": [
       {
-        "id": "172f5bbf3ace504a",
+        "id": "fba5f388057dc5bf",
         "type": "tabs",
         "children": [
           {
-            "id": "a8587c20d453f92e",
+            "id": "44f25f64d1765c1d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Thiết kế và xây dựng phần mềm/Xác định các phần tử thiết kế.md",
+                "file": "Đảm bảo chất lượng phần mềm/Phân chia lớp tương đương.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "32be96d350714b9b",
+            "id": "55fb8d1a2b7d4e8d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Project3/Xác định yêu cầu.md",
+                "file": "Đảm bảo chất lượng phần mềm/Kiểm thử hộp đen.md",
                 "mode": "source",
                 "source": false
-              }
-            }
-          },
-          {
-            "id": "b79fdf911b725f6b",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "Project3/Image/Usecase Diagram/Usecase tổng quan.png"
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -91,7 +82,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 271.5
+    "width": 271.5,
+    "collapsed": true
   },
   "right": {
     "id": "04bc5fc1716cb275",
@@ -107,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Thiết kế và xây dựng phần mềm/Xác định các phần tử thiết kế.md",
+                "file": "Đảm bảo chất lượng phần mềm/Kiểm thử hộp đen.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -124,7 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Thiết kế và xây dựng phần mềm/Xác định các phần tử thiết kế.md",
+                "file": "Đảm bảo chất lượng phần mềm/Kiểm thử hộp đen.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -147,7 +139,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Thiết kế và xây dựng phần mềm/Xác định các phần tử thiết kế.md"
+                "file": "Đảm bảo chất lượng phần mềm/Kiểm thử hộp đen.md"
               }
             }
           }
@@ -158,17 +150,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "a8587c20d453f92e",
+  "active": "55fb8d1a2b7d4e8d",
   "lastOpenFiles": [
-    "Thiết kế và xây dựng phần mềm/Thiết kế và xây dựng phần mềm.md",
-    "Thiết kế và xây dựng phần mềm/Bài tập lớn.md",
-    "Project3/Image/Usecase Diagram/Quản lý bài thi.png",
-    "Project3/Image/Usecase Diagram/Quản lý kì thi.png",
     "Đảm bảo chất lượng phần mềm/Phân chia lớp tương đương.md",
+    "Đảm bảo chất lượng phần mềm/Kiểm thử hộp đen.md",
     "Đảm bảo chất lượng phần mềm/Kiểm thử hộp trắng.md",
-    "Project3/Image/Usecase Diagram/Usecase tổng quan.png",
-    "Pasted image 20221205132011.png",
+    "Untitled.md",
     "Project3/Xác định yêu cầu.md",
-    "Project3/Project 3.md"
+    "Phát triển ứng dụng đa nền tảng/Đa nền tảng với Cloud Computing.md",
+    "Pasted image 20221205131025.png",
+    "Pasted image 20221205132011.png",
+    "Pasted image 20221205131548.png",
+    "Pasted image 20221205131135.png"
   ]
 }
