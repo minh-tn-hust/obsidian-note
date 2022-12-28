@@ -311,3 +311,143 @@ Thỉnh thoảng khi bạn gửi dữ liệu từ một *Activity* với một *
 ```java
 startActivityForResult(messageIntent, TEXT_REQUEST);
 ```
+Phương thức *startActivityForResult()* giống như *startActivity()* lấy một *Intent* chứ thông tin về *Activity* được khởi chạy và bất kì dữ liệu nào được gửi đến *Activity* đó. Tuy nhiên nó cũng cần một request code.
+Request code là một số tự nhiên định xác định cho yêu cầu và có thể sử dụng phân biệt giữa các kết quả khi bạn muốn xử lý dữ liệu trả về. Ví dụ, nếu bạn chạy một Activity và lấy mọt ảnh và một ảnh khác để lấy một ảnh từ thư viện ảnh, bạn cần các request code khác nhau để xác định cái nào data trả về thuộc về
+Thông thường bạn định nghĩa các request code như là các biến integer static với tên của nó bao gồm **REQUEST** sử dụng các số tự nhiên khác nhau cho mỗi code
+```java
+public static final int PHOTO_REQUEST = 1;
+public static final int PHOTO_PICK_REQUEST = 2;
+public static final int TEXT_REQUEST = 3
+```
+
+#### Trả về một phản hồi từ *Activity* được khởi chạy
+Phản hồi dữ liệu từ một *Activity* được khởi chạy trở lại *Activity* khởi đầu được gửi trong một *Intent*, cũng như vậy trong data hoặc extras. Bạn có thể cấu trúc *Intent* trả về này và để dữ liệu vào trong nó giống như cách mà bạ gửi *Intent*. Tiêu biểu *Activity* được khởi tạo sẽ có một *onClick* hoăc là những phuong thức được gọi khác khi bạn xử lý hành động của người dùng và đóng *Activity*. Đây cũng là nơi mà bạn sẽ cấu trúc sự phản hồi
+Để có thể trả lại dữ liệu từ *Activity* được khởi chạy, tạo một đối tượng *Intent* mới
+```java
+Intent returnIntent = new Intent();
+```
+Kết quả *Intent* không một lớp / compoent để kết thúc ở đúng vị trí. Hệ thống Android định hướng phản hồi này tới *Activity* khởi đầu cho bạn. Thêm data/extras vào *Intent* giống như cách bạn đã làm với *Intent* khởi đầu. Bạn có thể cần định nghĩa thêm keys dành cho *Intent* extras trả về tại lớp mà bạn bắt đầu
+```java
+public final static String EXTRA_RETURN_MESSAGE = 
+                                  "com.example.mysampleapp.RETURN_MESSAGE";
+```
+
+Sử dụng phương thức *setResult()* với response code và *Inetnt* với dữ liệu trả về
+```java
+setResult(RESULT_OK,replyIntent);
+```
+
+Response code được định nghĩa bởi lớp *Activity* có thể là:
+- *RESULT_OK* : request thành công
+- *RESULT_CANCELED* : request bị hủy bỏ
+- *RESUT_FISRT_USER* : dành cho code bạn tự định nghĩa
+Cuối cùng gọi *finish()* để đóng *Activity* và tiếp tục *Activity* khởi đầu
+```java
+finish()
+```
+
+#### Đọc dữ liệu phản hồi trong onActivityResult()
+Hiện tại, *Activity* được khởi tạo đã gửi dữ liệu lại cho *Activity* khởi đầu với một *Intent*, *Activity* đầu tiên phải handle dữ liêu jđó. Để có thể handle dữ liệu trả về bên trong *Activity* khởi đầu, triển khai phương thức *onActivityResult()*
+```java
+public void onActivityResult(int requestCode, int resultCode,  Intent data) {
+    super.onActivityResult(requestCode, resultCode, data);
+    if (requestCode == TEXT_REQUEST) {
+        if (resultCode == RESULT_OK) {
+            String reply = 
+               data.getStringExtra(SecondActivity.EXTRA_RETURN_MESSAGE);
+               // process data
+        }
+    }
+}
+```
+Có 3 tham số ben trong *onActivityResult()* chứ tất cả thông in mà bạn cần để có thể hanle dữ liệu trả về
+- Request code: request coed bạn đã thiết lập khi bạn khởi chạy với *Acitivity* với *startActivityForResult()*. Nếu bạn khởi chạy một *Activity* khác để thực hiện các hành động khác nhau, sử dụng code này để xác định dữ liệu cụ thể bạn sẽ lấy lại
+- Result code: Result code được set bởi *Activity* được khởi chạy, thường là một trong *RESULT_OK* hoặc *RESULT_CANCLED*
+- Intent data: *Intent* chứa dữ liệu trả về
+
+### Activity navigation
+Hệ thống Android Navigation hõ trợ 2 cách thức điều hướng khác nhau cho app của bạn
+- Back navigation, được cũng cấp bởi nút Back triên thiết bị
+- Up navigation, cungcapas bởi bạn như là một tùy chọn trên app bar
+
+#### Back navigation, tasks, và back stack
+Back navigation cho phép người dùng của bạn trở lại một *Activity* trước đó bằng cách chạm vào nút *Back*. 
+Back stack là một tập hợp của từng hoạt động mà người dùng đã truy cập và có thể trở lị sử dụng back button
+
+Android cung cấp *back stack* dành cho mỗi task. Một task là một organizing concep dành cho mỗi *Activity* người dùng tương tác với khi thực hiện một thao tác,  bất kể chung ở trong app của bạn hay là giao với nhiều app khác. Hầu như các task bắt đầu từ Home screen và chạm vào một app icon để bắt đầu một *task* (và một *back stack* mới). Nếu người dùng đang sử dụng 1 app, tab home, và chạy mới app mới, app mới sẽ được chạy trên task và back stack của riêng nó. Nếu người dùng trở lại app ban đầu, back stack và task ban đầu sẽ được trả lại. Sử dụng *Back button* chỉ có thể trả lại các *Activity* trong task hiện tại, không phải tất cả các *task* đang chạy trên thiết bị. Android cho phép người dùng di chuyển giữa các task với nhau bằng một overview / task screen
+
+
+#### Up navigation
+Up navigation, thỉnh thoảng được xem như là tổ tiên navigation / logical navigation, được sử dụng để diu chuyển bên trong một app dựa trên mối quan hệ phân cấp tường minh giữa các màn hình. Với up navigation, mỗi *Activity* được sắp xếp trong một phân cấp, mỗi *Activity* con được hiển thị một mũi tên trải trên app bar để biểu thị rằng trở về *Activity* cha. Cao nhất trong cây phân cấp này là *MainActivity* nên người dùng không thể tiếp tục ở đây
+Ví dụ, nếu như *Activity* chính trong một email app là liệt kê tất cả các tin nhắn, chọn một tin nhắn và chạy *Activity* thứ hai để hiển thị email đơn lẻ đó. Trong trường hơp tin nhắn *Activity* cung cấp một Up button để trở lại list các tin nhắn
+Hành vi của Up button được đinh nghĩa bởi bạn trong mỗi *Activity* dựa trên các bạn thiết kế app navigation như nào. Trong nhiều trường hợp, Up và Back navigation có thể cung cấp cùng chung một hành vi: để chỉ trở lại *Activity* trước.
+
+# Actitity lifecycle và trạng thái
+## Về vòng đời của Activity
+Vòng đời hoạt động là tập các trạng thái của một hoạt đọng có thể có trong suốt toàn bộ quãng đời, từ thởi điểm nó được khởi tạo cho tới khi nó bị phá hủy bởi hệ thống. Như là một người dùng tương tác với app của bạ, và app khác trên thiết bị, các hoạt động di chuyển và các trạng thái khác nhau
+![[Pasted image 20221228094420.png]]
+## Trạng thía và các phương thức vòng đời
+Khi một *Activity* chuyển và thoạt ra khỏi các trạng thai vòng đời khác nhau, hệ thống Android gọi các phương thức vòng đời tại mỗi trạng thái. Tất cả các phương thức được móc nối và bạn có thể ghi đè trong mỗi lớp *Activity* để định nghĩa *Activity* sẽ phản ứng khi người dùng ra/vào lại *Activity*. Giữa trong đầu rằng các trạng thái vòng đời -> chỉ có *Activity*, không phải của mỗi app, và bạ có thể triển khia các hành vi kahcs nhau tại mỗi điểm trên vòng đời của mỗi *Activity*
+
+### Activity khởi tạo : onCreate()
+```java
+@Override
+public void onCreate(Bundle saveInstanceState) {
+	super.onCreate(savedInstanceState);
+}
+```
+
+*Activity* của bạn bước vào trạng thai khởi tạo khi nó được chạy lần đàu tiên, khiu một *Activity* được khởi tạo lần đầu tiên, hệ thống sẽ gọi tói *onCreate()* để khở tạo *Activity*. Đơn giản, nếu app bắt đầu một *Activity* khác với một *Intent*, hệ thống sẽ ghép nối *Intent* request với *Activity* và gọi *onCreate()* tại *Activity* mối
+
+*onCreate()* là bắt buộc gọi và bạn phải triển khai nó bên trong *Activity* của bạn. Trong phương thức *onCreate()* bạn thực hiện các thao tác bắt đầu cơ bản và nên chỉ làm một lần, ví dự như cài đặt UI, đăng kí các biến cục bộ, hoặc là thiết lập các nhiệm vụ chạy nhầm.
+
+
+### Activity bắt đầu: onState()
+```java
+@Override
+protected void onStart() {
+    super.onStart();
+    // The activity is about to become visible.
+}
+```
+
+Sau khi *Activity* đươc khởi tạo với *onCreate()*, hệ thống gọi tiếp *onStart()*,  và *Activity* tới trạng thái start. *onStart()* cũng được gọi nếu như bạn dừng một *Activity* và trở lại, ví dụ như bạn click nút Back hoặc Up để trwro lại màn hình trước. Trong khi *onCreate()* chỉ được gọi một lần khi mà *Activity* khởi tạo thì *onStart()* có thể được gọi nhiều lần trong suốt quãn đời của *Activity* 
+
+Khi một *Activity* trong trạng thái bắt đầu và hiển thị trên màn hình, người dùng không thể tương tác được với nhó cho tới khi *onResume()*  được gọi, *Activity* đang chạy và *Activity* ở trong foreground
+
+Thông thường bạn triển khai *onStart()* trong *Activity* của bạn như là một các để khắc phục tại *onStop()*. Ví dụ, nếu bạn sử dụng các tài nguyên phần cũng (GPS/cảm biến), khi mà *Activity* dừng lại, bạn cần phải đăng kí lại chúng tại *onStart()*o
+
+### Activity tiếp tục: onResume()
+```java
+@Override
+protected void onResume() {
+    super.onResume();
+    // The activity has become visible (it is now "resumed").
+}
+```
+*Activity* ở tại trạng thái tiếp tục khi mà nó đã được khởi tạo, xuát hiện trên màn hình và sẵn sàng để sử dụng. Trạng thái tiếp tục thường được gọi là trạng thái chạy, bởi vì trong trạng thái này người dùng thực sự có thể tương tác với app
+
+Lần đầu tiên *Activity* được bắt đầu gọi *onResume()* chỉ sau *onStart()*. *onResume()* có thể được gọi nhiều lần, mỗi lần app trở lại trạng thái paused
+
+Giống như *onStart()* và *onStop()* phải triển khia như một cặp, bạn chỉ cần triển khai *onResume()* như là một các để có thể khắc phục *onPause()*.
+
+### Activity tạm dừng
+```java
+@Override
+protected void onPause() {
+    super.onPause();
+    // Another activity is taking focus 
+    // (this activity is about to be "paused").
+}
+```
+
+Trạng thái tạm dừng có thể xẩy ra trong nhiều tình huống
+- *Activity* chạy ngầm, nhưng chưa stop hoàn toàn. Đây là dấu hiệu đầu tiên cho thấy người dùng rời khởi hoạt ôdngj
+- *Activity* chỉ hiển thị một phần trên màn hình ví một hộp thoại hoặc một *Activity* trong  suống khác phủ lên nó
+- Trong chế độ nhiều cửa sổ, hoạt đọng được hiển thịt rên màn hình, nhưng một số hoạt đọng kahcs lại tập trung vào người dùng
+
+Hệ thống gọi *onPause()* khi mà *Activity* di chuyển vào trạng thái tạm dừng. Bởi vì *onPause()* là đấu hiện đầu tiên bạn biết răng người dùng có thể rời khỏi *Activity* và bạn có thể sử dụng onPause() để dừng các hoạt cảnh / video, ....
+
+Phương thức *onPause()* nên được thực thi nhanh chóng, dừng dùng onPause() cho các hoạt động sử dụng nhiều CPU chẳng hạn như ghi dữ liệu vào cơ sở dữ liệu. AApp có thể vẫn còn hiển thị trên màn hình và có thể đi qua trạng thái tạm dừng, và bất kì độ trễ nào khi thực thi *onPause()* có thể làm chậm quá trình chuyển sang *Activity* mới. Triển khai bất kì hoạt động nặng khi app ở trạng thái stoped
+
+Đối vói API 24, *Activity* bị pause vẫn có thể hiển thị trên màn hình, trong trường hợp này bạn muốn dừng các haotj cảnh /video và bạn vẫn muốn nhìn thấy *Activity*, bạn có thể sử dụng *inMultiWindowMode()* để thử khi app của bạn chạy trong chế độ nhiều cửa sổ
