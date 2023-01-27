@@ -4,35 +4,43 @@
     "type": "split",
     "children": [
       {
-        "id": "d5cba3f00c3b946a",
+        "id": "d3f40a11e587560e",
         "type": "tabs",
         "children": [
           {
-            "id": "089898098fd9782e",
+            "id": "2686718a7ae11745",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          },
+          {
+            "id": "77060015d3c0d61a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Báo cáo đánh giá.md",
+                "file": "Project3/Xác định yêu cầu.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "6b8857b002f29487",
+            "id": "67c6f6a648b777e5",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Trải nghiệm và giao diện người dùng/Đánh giá.md",
+                "file": "Phát triển ứng dụng đa nền tảng/Đánh giá hiệu năng.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -98,7 +106,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Trải nghiệm và giao diện người dùng/Đánh giá.md",
+                "file": "Phát triển ứng dụng đa nền tảng/Đánh giá hiệu năng.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +123,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Trải nghiệm và giao diện người dùng/Đánh giá.md",
+                "file": "Phát triển ứng dụng đa nền tảng/Đánh giá hiệu năng.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +146,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Trải nghiệm và giao diện người dùng/Đánh giá.md"
+                "file": "Phát triển ứng dụng đa nền tảng/Đánh giá hiệu năng.md"
               }
             }
           }
@@ -159,17 +167,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "6b8857b002f29487",
+  "active": "67c6f6a648b777e5",
   "lastOpenFiles": [
+    "Project3/Xác định yêu cầu.md",
+    "Project3/Project 3.md",
+    "Assets/Chỉnh sửa đề thi.png",
     "Báo cáo đánh giá.md",
-    "Trải nghiệm và giao diện người dùng/Đánh giá.md",
-    "Thiết kế ứng dụng di động/Ôn thi.md",
-    "Thiết kế và xây dựng phần mềm/Xác định các phần tử thiết kế.md",
-    "Thiết kế và xây dựng phần mềm/Ôn thi.md",
+    "Xác định yêu cầu.pdf",
+    "Kiểm thử hộp đen.pdf",
+    "Untitled.md",
     "Untitled 1.md",
-    "Thiết kế và xây dựng phần mềm/Thiết kế và xây dựng phần mềm.md",
-    "Thiết kế và xây dựng phần mềm/Thiết kế biểu đồ lớp.md",
-    "Thiết kế và xây dựng phần mềm/Bài tập lớn.md",
-    "Đảm bảo chất lượng phần mềm/Phân chia lớp tương đương.md"
+    "Assets/Pasted image 20221227214042.png",
+    "Assets/Pasted image 20221228094420.png"
   ]
 }
