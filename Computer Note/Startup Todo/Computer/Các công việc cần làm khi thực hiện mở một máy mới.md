@@ -8,6 +8,7 @@
 >- Chocolaty
 >- Git
 >- Sudo
+>- Rar
 
 # Config git
 ```bash
