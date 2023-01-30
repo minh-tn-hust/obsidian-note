@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Dailynote/2023-01-28.md",
+                "file": "7 tháng và x2 lương/2023-01-28.md",
                 "mode": "source",
                 "source": false
               }
@@ -23,12 +23,28 @@
             "id": "a003cbd1b932e070",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "7 tháng và x2 lương/2023-01-29.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "a6c6011db9cd2df7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "7 tháng và x2 lương/2023-01-30.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -78,7 +94,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 200
   },
   "right": {
     "id": "6be5eaa196cb4118",
@@ -94,6 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "7 tháng và x2 lương/2023-01-30.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,6 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "7 tháng và x2 lương/2023-01-30.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -131,7 +149,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "7 tháng và x2 lương/2023-01-30.md"
+              }
             }
           }
         ]
@@ -153,9 +173,10 @@
   },
   "active": "c84a3ac8b08eac6b",
   "lastOpenFiles": [
-    "Dailynote/2023-01-29.md",
-    "Dailynote/2023-01-28.md",
-    "Computer/Các công việc cần làm khi thực hiện mở một máy mới.md",
-    "().md"
+    "Untitled.md",
+    "7 tháng và x2 lương/2023-01-29.md",
+    "7 tháng và x2 lương/2023-01-28.md",
+    "().md",
+    "Computer/Các công việc cần làm khi thực hiện mở một máy mới.md"
   ]
 }
