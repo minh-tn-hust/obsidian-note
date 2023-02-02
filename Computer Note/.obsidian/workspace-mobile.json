@@ -1,0 +1,129 @@
+{
+  "main": {
+    "id": "5f52367d98b5ed5a",
+    "type": "split",
+    "children": [
+      {
+        "id": "7ec68d9227a693ed",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "1ffab9423fc40abf",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Báo cáo.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "5a5a131109a9cfc0",
+    "type": "mobile-drawer",
+    "children": [
+      {
+        "id": "7174ca148fb11e98",
+        "type": "leaf",
+        "state": {
+          "type": "file-explorer",
+          "state": {
+            "sortOrder": "alphabetical"
+          }
+        }
+      },
+      {
+        "id": "d1766e079d6da483",
+        "type": "leaf",
+        "state": {
+          "type": "search",
+          "state": {
+            "query": "",
+            "matchingCase": false,
+            "explainSearch": false,
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical"
+          }
+        }
+      },
+      {
+        "id": "771e8af5b4707ddf",
+        "type": "leaf",
+        "state": {
+          "type": "tag",
+          "state": {
+            "sortOrder": "frequency",
+            "useHierarchy": true
+          }
+        }
+      },
+      {
+        "id": "e1544150c6818b82",
+        "type": "leaf",
+        "state": {
+          "type": "starred",
+          "state": {}
+        }
+      }
+    ],
+    "currentTab": 0
+  },
+  "right": {
+    "id": "37734d5aae84b529",
+    "type": "mobile-drawer",
+    "children": [
+      {
+        "id": "01b2953b5d33e7b0",
+        "type": "leaf",
+        "state": {
+          "type": "backlink",
+          "state": {
+            "file": "Báo cáo.md",
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical",
+            "showSearch": false,
+            "searchQuery": "",
+            "backlinkCollapsed": false,
+            "unlinkedCollapsed": true
+          }
+        }
+      },
+      {
+        "id": "b2233cb80db8e160",
+        "type": "leaf",
+        "state": {
+          "type": "outgoing-link",
+          "state": {
+            "file": "Báo cáo.md",
+            "linksCollapsed": false,
+            "unlinkedCollapsed": true
+          }
+        }
+      },
+      {
+        "id": "424ab74da67897fc",
+        "type": "leaf",
+        "state": {
+          "type": "outline",
+          "state": {
+            "file": "Báo cáo.md"
+          }
+        }
+      }
+    ],
+    "currentTab": 0
+  },
+  "active": "7174ca148fb11e98",
+  "lastOpenFiles": [
+    "Startup Todo/Dailynote/2023-01-29.md",
+    "Startup Todo/Dailynote/2023-01-28.md"
+  ]
+}
