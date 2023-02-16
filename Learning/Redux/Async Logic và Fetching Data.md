@@ -1,4 +1,4 @@
-# Sử dụng Middleware để có thể chạy được logic bất đồng bộ
+	# Sử dụng Middleware để có thể chạy được logic bất đồng bộ
 Bởi chính Redux, một *store* không hề biết bất cứ thứ gì về **logic bất đồng bộ**. Nó chỉ biết cách để dispatch một hành động đồng bộ, cập nhật trạng thái bằng cách gọi tới hàm root của reducer, và thông báo cho UI là có cái gì đó đã thay đổi. Bất kì sự bất đồng bộ nào đều phải xảy ra bên ngoài *store*
 
 Nhưng, sẽ ra sao nếu như chúng ta muốn có các **logic bất đồng bộ (async logic)** tương tác với *store* bởi dispatch hoặc là kiểm tra trạng thái hiện tại của *store*? Đó là cách màn **Redux middleware** hướng tới. Chúng mở rộng *store* và cho phép bạn:
@@ -123,7 +123,7 @@ const fetchUserById = createAsyncThunk(
 	'users/fetchByIdStatus',
 
 	// payload creator callback
-	async (userId, thunkAPI) => {
+		async (userId, thunkAPI) => {
 		const response = await userAPI.fetchById(userId);
 		return response.data
 	}

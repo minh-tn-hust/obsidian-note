@@ -383,8 +383,9 @@
 	 		- Lỗi xảy ra trong quá trình chấm
 	 		- Số lượng testcase pass qua
 	 		- Kết quả của bài test (pass/fail)
+	 		- Thời gian chạy của bài thi
 	Tiền điều kiện:
-		- Không có tiền điều kiện
+		- Không có tiền điều kiện, thí sinh bắt buộc phải đăng nhập
 	Hậu điều kiện:
 		- Kết quả được cập nhật vào lịch sử chấm bài của người dùng
 	Luồng chính:
@@ -399,7 +400,7 @@
 		
 #### Xuất thông tin về bài chấm
 	 UC : Xuất thông tin bài chấm
-	 Mô tả ngắn : 
+	 Mô tả ngắn : Hệ thống xuất thông tin về bài vừa 
 	 Input:
 	 Output:
 	 Tiền điều kiện:
@@ -462,6 +463,7 @@
 ![[Xem danh sách các bài thi.png]]
 #### Filter đề thi
 ![[Filter đề thi.png]]
+
 ---
 # Biểu đồ sequence
 ## Người sử dụng

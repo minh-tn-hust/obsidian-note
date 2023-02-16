@@ -8,39 +8,31 @@
         "type": "tabs",
         "children": [
           {
-            "id": "2686718a7ae11745",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {}
-            }
-          },
-          {
-            "id": "77060015d3c0d61a",
+            "id": "2159bf3aa77adb79",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Project3/Xác định yêu cầu.md",
+                "file": "Thiết kế và xây dựng phần mềm/Xác định các phần tử thiết kế.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "67c6f6a648b777e5",
+            "id": "17ae2f2cdd7de598",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Project3/Xác định yêu cầu.md",
+                "file": "Thiết kế và xây dựng phần mềm/Báo cáo cuối kì.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -106,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Project3/Xác định yêu cầu.md",
+                "file": "Thiết kế và xây dựng phần mềm/Báo cáo cuối kì.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -123,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Project3/Xác định yêu cầu.md",
+                "file": "Thiết kế và xây dựng phần mềm/Báo cáo cuối kì.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -146,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Project3/Xác định yêu cầu.md"
+                "file": "Thiết kế và xây dựng phần mềm/Báo cáo cuối kì.md"
               }
             }
           }
@@ -167,17 +159,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "67c6f6a648b777e5",
+  "active": "17ae2f2cdd7de598",
   "lastOpenFiles": [
-    "Project3/Project 3.md",
-    "Phát triển ứng dụng đa nền tảng/Đánh giá hiệu năng.md",
+    "Thiết kế và xây dựng phần mềm/Xác định các phần tử thiết kế.md",
     "Project3/Xác định yêu cầu.md",
-    "Assets/Chỉnh sửa đề thi.png",
+    "Project3/Project 3.md",
+    "Thiết kế và xây dựng phần mềm/Báo cáo cuối kì.md",
+    "Đảm bảo chất lượng phần mềm/Phân chia lớp tương đương.md",
     "Báo cáo đánh giá.md",
-    "Xác định yêu cầu.pdf",
-    "Kiểm thử hộp đen.pdf",
-    "Untitled.md",
-    "Untitled 1.md",
-    "Assets/Pasted image 20221227214042.png"
+    "Thiết kế và xây dựng phần mềm/Bài tập lớn.md",
+    "Thiết kế và xây dựng phần mềm/Phân tích use case.md",
+    "Phát triển ứng dụng đa nền tảng/Đánh giá hiệu năng.md",
+    "Assets/Chỉnh sửa đề thi.png"
   ]
 }

@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "eb93a44b164a2c1a",
+        "id": "0a6cce5722a07c37",
         "type": "tabs",
         "children": [
           {
-            "id": "ce2ac95b30a6450b",
+            "id": "d5136eb51b88471d",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Redux/Async Logic và Fetching Data.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -69,8 +65,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "a4312d544d348d74",
@@ -86,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Redux/Async Logic và Fetching Data.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Redux/Async Logic và Fetching Data.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Redux/Async Logic và Fetching Data.md"
-              }
+              "state": {}
             }
           }
         ],
@@ -148,17 +139,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "ce2ac95b30a6450b",
+  "active": "d5136eb51b88471d",
   "lastOpenFiles": [
-    "Redux/Redux Data Flow.md",
-    "Redux/Redux Fundamental.md",
-    "Redux/Redux App Structure.md",
+    "Data Structure/Segment tree.md",
     "Redux/Async Logic và Fetching Data.md",
+    "Redux/Redux App Structure.md",
+    "Redux/Redux Fundamental.md",
+    "Redux/Redux Data Flow.md",
+    "2023-02-12.md",
     "Clean Code/Rule.md",
     "Quản lý bản thân/Làm việc hiệu quả.md",
     "Assets/reduxdataflowdiagram-49fa8c3968371d9ef6f2a1486bd40a26.gif",
-    "Assets/Pasted image 20221203152011.png",
-    "Assets/Pasted image 20221203152005.png",
-    "Untitled.md"
+    "Assets/Pasted image 20221203152011.png"
   ]
 }
