@@ -31,3 +31,11 @@ Lưu ý rằng, một đỉnh là một đỉnh lá nếu như nó tương ứng
 Bây giờ, dành cho việc cấu tạo ST, chúng ta bắt đầu từ level bên dưới (các đỉnh lá) và khai báo chúng các giá trị tương ứng. Cơ bản về những giá trị này, chung ta có thể tính toán giá trị của các level trước bằng cách sử dụng toán từ merge. Cơ bản, chúng ta có thể tính toán được các giá trị ở phía trước, và lập tại thủ túc cho tới khi chúng ta tới được node gốc
 
 Thuận tiện để miêu tả toán tử này 
+
+
+;ưoaegjoiwaejgiojgiowejgo
+>oiawjegoijaweogijpoaweigjowaejg owejop ijfo piwja oijoijop jpj pơ
+>poaijewfpoiaj o
+> ơpaefjpowij
+> jopwaejf poewf
+> opiajefp

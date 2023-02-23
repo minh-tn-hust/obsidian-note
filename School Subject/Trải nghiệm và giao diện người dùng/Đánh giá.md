@@ -11,10 +11,3 @@
 ### Dự đoán
 >người dùng không cần có mặt. Các chuyên gia sử dụng kiến thức của họ về người dùng điển hình (sử dụng đánh giá heuristic) để dự đoán khả năng sử dụng các vấn đề. Một cách tiếp cận khác liên quan đến các mô hình dựa trên lý thuyết.
 
-# Các kĩ thuật đánh giá
-## Đánh giá hình thành
-
-## Đánh giá tổng kết
-
-
-## Đánh giá sau tổng kết

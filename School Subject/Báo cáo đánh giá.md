@@ -18,8 +18,6 @@ Xem xét các tính năng có khả năng phát triển với các công nghệ 
 Môi trường thử nghiệm: phòng thí nghiệm
 Thiết bị kiểm thử: các tài nguyên có sẵn như 
 - mẫu báo cáo User flow (x1)
-- mẫu thử độ tin cậy cao (x1)
-- sitemap (x1)
 ## 7. Vai trò của người thử nghiệm: giám sát, trọng tài, v.v.
 Vai trò: người giám sát và cho nhận xét
 ## 8. Các biện pháp đánh giá phải được thực hiện (định tính hay định lượng, khách quan hay  chủ quan)
@@ -28,12 +26,34 @@ Vai trò: người giám sát và cho nhận xét
 - Đề xuất cách thức thực hiện 
 - Nhận xét và đánh giá tính năng
 
-## 9. Nội dung báo cáo và cách trình bày báo cáo: nhóm tập trung, cuộc họp không chính thức, có mặt giám đốc
+#### Đối với giáo viên
+##### Ưu điểm
+Giao bài tập
+	- Về phần giao bài tập, UI đã đưa ra nhanh danh sách bài tập đã
+	được giao gần đây
+	- Có phần tạo mới bài tập, bài tập có thể giao dưới dạn các câu hỏi
+	trăc nghiệm và tự luận được
+	- Hiển thị các bài đã được giao và số lượng sinh viên trực quan
+Bảng điểm sinh viên
+- Có UI xem bảng điểm, thống kê đầu đủ danh sach nạp bài tập của
+sinh viên
+Danh sách điểm danh
+- Có UI kiểm tra được số lần đã điểm danh trong quá khứ
 
-**
-# Quy trình đánh giá
-## Liệt kê các tính năng cần triển khai
-- Tính năng đăng nhập -> Có thể triển khai
-- Tính năng đăng kí -> Có thể triển khai
-- 
+##### Nhược điểm
+- Đã hiển thị có tiết nào ở màn hình chinh dành cho giáo viên nhưng
+không thể trực tiếp vào được lớp mà phải qua một bước là
+vào danh sách lớp rồi lựa chọn lớp
+- Không có thiết lập để giao viên có thể thực hiện tạo điểm danh
+hay không điểm danh
+
+#### Đối với sinh viên
+##### Ưu điểm
+- Đã có nút điểm danh nhanh để tối ưu số bước điểm danh
+- Thời khóa biểu các lớp rõ ràng
+
+##### Nhược điểm
+- Không thể trực tiếp nhấn vào lớp và phải thêm bước
+- Đối với danh sách các bài tập, các bài tập đã làm/chưa làm đang hiển thị cá màu giống nhau
+không thực sự thể hiện nổi bật được bài nào đã làm
 ## Khả năng áp dụng mẫu thử độ tin cậy cao
