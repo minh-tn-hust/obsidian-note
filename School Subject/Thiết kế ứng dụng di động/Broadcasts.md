@@ -136,4 +136,63 @@ Nếu không có intent filter nào được chỉ định, broadcast receiver c
 Receiver động còn được gọi là `context-registered receiver`. Bạn đăng kí một receiver động sử dụng app contetnxt hoặc một *Activity* context. Một receiver động nhận broadcast miến là ngữ cảnh đăng kí hợp lệ
 - Nếu abnj sử dụng application context để đăng kí receiver, ứng dụng của bạn nhận các broadcast thích hợp miễn là app của bạn đang chạy trong foreground hoặc background
 - Nếu bạn sử dụng *Activity* context để đăn kí receiver, app của bạn nhận các broadcast thích hợp cho tới khi *Activity* bị hủy
-- 
+Để sử dụng ngữ cảnh(context) để đăng kí reciever động, làm theo các bước sau:
+1. Tạo một *IntentFilter* và thêm *Intent action* mà bạn muốn app lắng nghe. Bạn có thể thêm nhieefuhown một action vào trong cùng một *Intent Filter*
+```java
+IntentFilter intentFilter = new IntentFilter();
+filter.addAction(Intent.ACTION_POWER_CONNECTED);
+filter.addAction(Intent.ACTION_POWER_DISCONNECTED);
+```
+
+Khi nguồn được kết nối hoặc ngắt keetsnoois, hệ thống *Android* phát các `INTENT.ACTION_POWER_CONNECTED` và `Intent.ACTION_POWER_DISCONNECTED`
+2. Đăng kí receiver bằng cách gọi `registerReceiver()` trong context. Truyền đối tượng `BroadcastReceiver` và `IntentFilter`
+```java
+mReceiver = new AlarmReceiver();
+this.registerReceiver(mReceiver, intentFilter);
+```
+
+Trong ví dụ trên, ngữ cảnh của *Activity* (this) được sử dungjdder dadwgn kí receiver. Bởi vậy app của bạn sẽ nhận được broadcast cho tới khi nào *Activity* còn hoạt động
+
+
+## Local broadcast
+Bạn phải đăng kí local receiver động, bởi vì đăng kí tĩnh trong file manifest thì không thể được đanh cho local broadcast
+Để đăng kí một receiver cho local broadcast:
+1. Lấy một instance của `LocalBroadcastManager` bằng cách gọi phương thức `getInstance()`
+2. Gọi phương thức `registerReceiver()` , truyền receiver và `IntentFilter` vào
+```java
+LocalBroadcastManager.getInstance(this).registerReceiver(mReceiver, new IntentFilter(CustomReceiver.ACTION_CUSTOM_BROADCAST));
+```
+
+## Hủy đăng kí receiver
+Để tiết kiệm tài nguyên hệ thống và hạn chê bị rò rỉ, hủy đăng kí receiver động khi app bạn không còn sử dụng chúng nữa, hoặc là trước khi *Activity* hoặc app bị phá hủy. Điều này luôn đúng dành cho local broadcast receiver, bởi vì chúng được đăng kí động.
+Để hủy đăng kí một noramla broadcas receiver
+1. Gọi `unregisterReceiver()` và truyền vào trong đó receiver muốn hủy
+```java
+unregisterReceiver(mReceiver);
+```
+
+Để thực hiện huyer local broadcast reciever:
+2. Lấy instance của `LocalBroadcastManager`
+3. Gọi phương thức `LocalBroadcastManager.unregisterReceiver()` và truyền vào đó đối tượng `BroadcastReceiver`
+```java
+LocalBroadcastManager.getInstance(this).unregisterReceiver(mReceiver);
+```
+
+Bạn muốn hủy khi nào thì phù thuộc vào vòng đời mong muốn của đối tượng `BroadcastReceiver`
+	1. Thỉnh thoảng, reciever chỉ cần khi mà hoạt động của bạn được hiển thị, ví dụ như ngắt kết nối mạng khi mạng không khả dụng, Trong trường hợp này, đăng kí receiver trong `onResume()` và hủy nó trong `onPause()`;
+5. Bạn có thể sử dụng `onStart()/onStop()` hoặc `onCreate()/onDestroy()`, nếu chúng phù hợp hơn cho trường hợp của bạn
+
+## Hạn chế broadcast
+Broadcast không hạn chế có thể gây ra mối đe doạn an ninh, bởi vì  bấy kì reicever nào đăng kí đuề có thể nhận được nó. Ví dụ, nêu snhuw app của ban sử dụng một broadcast normal để gửi một *Intent* không tường minh bao gồm các thông tin nhạy cả, một app khác chưa malware có thể nhận được broadcast. Hạn chế broadcast được khuyên khích mạnh mẽ
+
+Cách để hạn chế một broadcast:
+- Nếu có thể, sử dụng `LocalBroadcastManager`, nó sẽ giữ cho dữ liệu bên trong app của bạn, tránh được bất kì vấn đề rò rỉ thông tin. Nếu bạn chỉ có thể dùng *LocalBroadcastManager* nếu bạn không cần phải giao tiếp với những App khác
+- Sử dụng phuowng thức `setPakage()` và đẩy vào tên package. Broardcast đươc jhanj chết tới những app mà trùng với tên gói chỉ định
+- Bắt buộc quyền truy cập ở phía gửi, hoặc ở phía nhận hoặc cả hai
+
+Để bắt buộc mọt quyền khi gửi broadcast:
+- Cung cấp một tam số quyền không null tới `sendBroadcast()`. Chỉ reicever yêu cầu quyền này sử dụng thẻ <uses-permissioni/> trong file *AndroidManifest* mới có thể nhận được broad cast
+
+Để bắt buộc có quyền khi nhận broadcast:
+- Nếu bạn đăng kí receiver động, cung cấp một quyền không null tới `registerReceiver()`Ao
+- Nếu bạn đăng kí receiver tính, sử dụng thuộc tính `android:permission` bên trong thẻ <receiver/> trong `AndroidManifest`

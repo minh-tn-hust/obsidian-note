@@ -138,9 +138,45 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "b9037108e2663d5c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Thiết kế ứng dụng di động/Services.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "ace8a8420960b20a",
+            "type": "leaf",
+            "state": {
+              "type": "canvas",
+              "state": {
+                "file": "Untitled.canvas",
+                "viewState": {
+                  "x": 238.08000000000007,
+                  "y": 22.32,
+                  "zoom": 0,
+                  "snapToGrid": false
+                }
+              }
+            }
+          },
+          {
+            "id": "fb392a6c132e965c",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
           }
         ],
-        "currentTab": 10
+        "currentTab": 11
       }
     ],
     "direction": "vertical"
@@ -207,7 +243,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Thiết kế ứng dụng di động/Broadcasts.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -224,7 +259,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Thiết kế ứng dụng di động/Broadcasts.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -246,9 +280,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Thiết kế ứng dụng di động/Broadcasts.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -268,17 +300,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "03f32472c07fb331",
+  "active": "fb392a6c132e965c",
   "lastOpenFiles": [
-    "Thiết kế ứng dụng di động/Ôn thi cuối kì/Lifecycle.md",
+    "Thiết kế ứng dụng di động/Services.md",
+    "Untitled.canvas",
+    "Thiết kế ứng dụng di động/Ôn thi cuối kì/Implicit intent.md",
     "Thiết kế ứng dụng di động/Broadcasts.md",
+    "Thiết kế ứng dụng di động/Ôn thi cuối kì/Lifecycle.md",
     "Thiết kế ứng dụng di động/Internet.md",
     "Thiết kế ứng dụng di động/AsyncTask.md",
     "Thiết kế ứng dụng di động/Drawable.md",
     "Thiết kế ứng dụng di động/Người dùng di chuyển.md",
-    "Thiết kế ứng dụng di động/Ôn thi.md",
-    "Thiết kế ứng dụng di động/UI Thread.md",
-    "Thiết kế ứng dụng di động/Fragment.md",
-    "Thiết kế và xây dựng phần mềm/Xác định các phần tử thiết kế.md"
+    "Thiết kế ứng dụng di động/Ôn thi.md"
   ]
 }
