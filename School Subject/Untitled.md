@@ -1,4 +1,0 @@
-**Ouput**
-- First
-- Second
-- Third

@@ -85,7 +85,7 @@ const addTodo = text => {
 }
 ```
 ## Reducers
-Một reduceer là một function, chúng nhận state hiện tại và một đối tượng hành động (action object) sau đó quyết định cách update trạng thái hiện tại như nào. Chúng luôn trả về một trạng thaismoiws. Bạn có thể nghĩ về reducer như là một event listener thứ mà sẽ handle các sự kiện dựa trên những hành động mà chúng nhận được
+Một reduceer là một function, chúng nhận state hiện tại và một đối tượng hành động (action object) sau đó quyết định cách update trạng thái hiện tại như nào. Chúng luôn trả về một trạng thái mới. Bạn có thể nghĩ về reducer như là một event listener thứ mà sẽ handle các sự kiện dựa trên những hành động mà chúng nhận được
 
 Các reducre phải luôn luôn theo các rule sau:
 	- Chúng chỉ nên tính toán trạng thái mới dựa trên trạng thái và hành động
@@ -117,8 +117,8 @@ function coutnerReducer(state = initialState, action) {
 Reduce có thể sử dụng bất kì logic nào bên trong để thực hiện ra quyết định trạng thái mới nên được : if/else, switch, vòng lặp ...
 
 ## Store
-Trạng thía hiện tại của một Redux up được lưu bên trong một Object gọi là store
-Store được tạo bằng cách đẩy vào nó một reducer, và có một phương thức để gọi là getState để lấy được state hiện tại
+Trạng thái hiện tại của một Redux up được lưu bên trong một Object gọi là store,
+Store được tạo bằng cách đẩy vào nó một reducer, và có một phương thức để gọi là getState để lấy được state hiện tại.
 ```JSX
 import { configureStore } from '@reduxjs/toolkit'
 
@@ -128,14 +128,14 @@ console.log(store.getState())
 ```
 
 ## Dispatch
-Redux store có một phương thức gọi là dispatch. Các duy nhất để thưc hiện cập nhật trạng thái đó chính là gọi ==store.dispatch()== và đẩy vào bên trong đó một ==action object==. Store có thể chạy bất cứ hàm nào của reducer và lưu chúng vào một state mới, và sau đó chúng ta có thể gọi getState() để có thể lây được giá trị đã update
+Redux store có một phương thức gọi là dispatch. Cách duy nhất để thưc hiện cập nhật trạng thái đó chính là gọi ==store.dispatch()== và đẩy vào bên trong đó một ==action object==. Store có thể chạy bất cứ hàm nào của reducer và lưu chúng vào một state mới, và sau đó chúng ta có thể gọi getState() để có thể lấy được giá trị đã update.
 ```JS
 store.dispatch({type : 'counter/increment'});
 console.log(store.getState())
 ```
-Bạn có thể nghĩa về dispatching actiuon như là "trigger một hành động" bên trong app.  Một thử gì đó xảy ra và chúng ta muốn store có thể biết về nó. Reducers hành động như là một event listener, và khi chugns nghe thầy một hành động, chúng biết được và chúng update trạng thái 
+Bạn có thể nghĩ về dispatching action như là "trigger một hành động" bên trong app.  Một thử gì đó xảy ra và chúng ta muốn store có thể biết về nó. Reducers hành động như là một event listener, và khi chúng nghe thấy một hành động, chúng biết được và chúng update trạng thái.
 
-Chúng ta thường gọi action creator để có thẻ dispaltch hahf động đúng
+Chúng ta thường gọi action creator để có thể dispatch hành động đúng:
 ```JS
 const increment = () => {
 	return {
@@ -147,7 +147,7 @@ console.log(store.getState())
 ```
 
 ## Selectors
-Selectors là một hàm mà chúng biết cách để trích xuất những mẩu thông tin nhỏ nhất định từ một store chứa trạng thái. Như một cái app phát triển trở nên lớn hơn, thứ này có thể giúp tránh được việc lặp logic ở các phần khác nhau của app khi cần đọc data cùng một dạng data
+Selectors là một hàm mà chúng biết cách để trích xuất những mẩu thông tin nhỏ nhất định từ một store chứa trạng thái. Như một cái app phát triển trở nên lớn hơn, thứ này có thể giúp tránh được việc lặp logic ở các phần khác nhau của app khi cần đọc data cùng một dạng data.
 ```JS
 const selectCountervalue = state => state.value
 
@@ -156,21 +156,21 @@ const currentValue = selectCounterValue(store.getState())
 
 # Redux Application Data Flow
 
-Trước đó chugns ta đã nói về "one-wayj data flow" - miêu tả chuỗi các bước để thực hiện cập nhật trong app
+Trước đó chúng ta đã nói về "one-way data flow" - miêu tả chuỗi các bước để thực hiện cập nhật trong app
 - State miêu tả tình trạng hiện của app tại một thời điểm
 - UI hiển thị dựa trên state
-- Khi một hứ gì đó thayd dổi, trạng thái được cập nhật dựa trên cái gì đang diễn ra
+- Khi một thứ gì đó thay đổi, trạng thái được cập nhật dựa trên cái gì đang diễn ra
 - UI thực hiện rerender dựa trên trạng thái mới
 Với Redux, chúng ta có thể chia nỏ các bước vào các thông tin chi tiết sau
 - Initial setup:
 	- Một Redux store được tạo sử dụng hàm reducer gốc
 	- Store gọi hàm reducer gốc một lần và thực hiện lưu giá trị trả về như là giá trị state khởi đầu
-	- Khi thành phần UI lần đầu được render, UI Component truy cập vào state hiện tại của Redux store, và sử dụng data đó để quyết định cái gì được hiển thị. Chúng cũng thực hiện đăng kí để khi sotre update trong tương lai, chugns có thể biết nếu như trạng thái thay đổi
+	- Khi thành phần UI lần đầu được render, UI Component truy cập vào state hiện tại của Redux store, và sử dụng data đó để quyết định cái gì được hiển thị. Chúng cũng thực hiện đăng kí để khi store update trong tương lai, chúng có thể biết nếu như trạng thái thay đổi
 - Update
 	- Một thứ gì đó xảy ra bên trong app (ví dụ như click vào một button)
 	- App dispatche ra một hành động tới Redux store, kiểu như ```JS dispatch({type : 'counter/increment'})```
-	- Store chạy hàm reducer lại một lần nữa với trạng thái trước đó và hành độn hiện tại, lưu và trả về một trạng thái mới
-	- Store lại thông báo cho tất cả các htnahf phàn UI mà đã đăng kí lắng nghe khi store cập nhật
-	- Mỗi thành phần Ui cần dât từ store thực hiện check lại để xem thử xem trạn thái mà chúng cần có được thay đổi hay không
-	- Mỗi thành phần sẽ thấy dât được thay đôi và thực hiện forece re-render với dât mới, chugsn có thể update những gì mà chúng hiển thị trên màn hình]
+	- Store chạy hàm reducer lại một lần nữa với trạng thái trước đó và hành động hiện tại, lưu và trả về một trạng thái mới
+	- Store lại thông báo cho tất cả các thành phần UI mà đã đăng kí lắng nghe khi store cập nhật
+	- Mỗi thành phần Ui cần data từ store thực hiện check lại để xem thử xem trạng thái mà chúng cần có được thay đổi hay không
+	- Mỗi thành phần sẽ thấy data được thay đổi và thực hiện foreach re-render với data mới, chúng có thể update những gì mà chúng hiển thị trên màn hình]
 Dưới đây là cách mà dataflow hoạt động![[reduxdataflowdiagram-49fa8c3968371d9ef6f2a1486bd40a26.gif]]

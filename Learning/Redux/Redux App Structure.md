@@ -106,11 +106,11 @@ A **thunk** là một loại Redux function đặc biết mà có thể chứa b
 - Một hàm khởi tạo bên ngoài, khởi tạo và trả về hàm **thunk**
 Hàm tiếp theo mà được xuất ra từ counterSlice là một ví dụ về một **thunk action creator**
 ```JS
-export const incrementAsync = amount => dispatch => {
+export const incrementAsync = (amount) => ((dispatch) => {
 	setTimeout(() => {
 		dispatch(incrementByAmount(amout));
 	})
-} 
+}) 
 ```
 
 Chúng ta có thể sử dụng chúng giống như một hàm action creator thông tường

@@ -49,6 +49,8 @@
 ## Biểu đồ usecase quản lý bài thi
 ![[Quản lý bài thi.png]]
 
+## Usecase máy chấm
+![[Máy chấm.png]]
 ---
 # Luồng kịch bản
 ## Người quản lý
@@ -371,32 +373,132 @@
 
 ## Hệ thống máy chấm
 #### Chấm bài
+	UC : Chấm bài
+	Mô tả ngắn : Máy chấm thực hiện chấm bài của người dùng nạp lên
+	Input: 
+		- Testcase dựa vào bài mà người dùng đã chọn để nạp
+		- File bài nạp của người dùng
+	Output:
+	 	- Kết quả của bài chấm và các thông tin liên quan:
+	 		- Lỗi xảy ra trong quá trình chấm
+	 		- Số lượng testcase pass qua
+	 		- Kết quả của bài test (pass/fail)
+	 		- Thời gian chạy của bài thi
+	Tiền điều kiện:
+		- Không có tiền điều kiện, thí sinh bắt buộc phải đăng nhập
+	Hậu điều kiện:
+		- Kết quả được cập nhật vào lịch sử chấm bài của người dùng
+	Luồng chính:
+		1. Hệ thống quản lý nhận được bài chấm của người dùng
+		2. Hệ thống quản lý lưu vào cơ sở dữ liệu của người dùng
+		3. Hệ thống chấm kiểm tra file
+		4. Hệ thống chấm được thực hiện gọi để bắt đầu chấm
+		5. Hệ thống chấm bài trả kết quả lại cho hệ thống
+		6. Hệ thống quản lý lưu kết quả bài chấm
+	Luồng phụ:
+		Không có luồng phụ xảy ra ở đây
+		
 #### Xuất thông tin về bài chấm
+	 UC : Xuất thông tin bài chấm
+	 Mô tả ngắn : Hệ thống xuất thông tin về bài vừa 
+	 Input:
+	 Output:
+	 Tiền điều kiện:
+	 Hậu diều kiện
+	 Luồng chính:
+	 Luồng phụ:
+
 #### Tạo máy ảo chấm bài
+	 UC : Xuất thông tin bài chấm
+	 Mô tả ngắn : 
+	 Input:
+	 Output:
+	 Tiền điều kiện:
+	 Hậu diều kiện
+	 Luồng chính:
+	 Luồng phụ:
+
 #### Quản lý máy chấm
+	 UC : Xuất thông tin bài chấm
+	 Mô tả ngắn : 
+	 Input:
+	 Output:
+	 Tiền điều kiện:
+	 Hậu diều kiện
+	 Luồng chính:
+	 Luồng phụ:
 
 # Quy trình hoạt động
 ## Người quản lý
 ### Quản lý bài thi
 #### Đăng đề thi
+![[Đăng đề thi.png]]
 #### Chỉnh sửa đề thi
+![[Chỉnh sửa đề thi.png]]
 #### Xóa đề thi
+![[Xóa đề thi.png]]
 #### Kiểm tra đề thi
+![[Kiểm tra đề thi.png]]
 ### Quản lý kì thi
 #### Tạo kì thi
+![[Tạo kì thi.png]]
 #### Chỉnh sửa kì thi
+![[Chỉnh sửa kì thi.png]]
 #### Thêm người quản lý vào kì thi
+![[Thêm người quản lý vào kì thi.png]]
 #### Import bài thi vào kì thi
+![[Import bài thi vào kì thi 1.png]]
 ## Người dự thi
 #### Danh sách lịch sử nạp bài
+![[Danh sách lịch sử nạp bài.png]]
 #### Làm bài thi
+![[Làm bài thi.png]]
 #### Xem danh sách kì thi
+![[Xem danh sách kì thi.png]]
 #### Tham gia kì thi
+![[Tham gia kì thi.png]]
 #### Xem các bảng rank của kì thi
+![[Xem bảng rank của kì thi.png]]
 #### Xem danh sách các bài thi
+![[Xem danh sách các bài thi.png]]
 #### Filter đề thi
+![[Filter đề thi.png]]
+
 ---
 # Biểu đồ sequence
+## Người sử dụng
+### Danh sách lịch sử nạp bài
+![[Danh sách lịch sử nạp bài 1.png]]
+### Filter đề thi
+![[Filter đề thi 1.png]]
+### Làm bài thi
+![[Làm bài thi 1.png]]
+### Tham gia kì thi
+![[Tham gia kì thi 1.png]]
+### Xem bảng rank của kì thi
+![[Xem bảng rank của kì thi 1.png]]
+### Xem danh sách các đề thi
+![[Xem danh sách các đề thi.png]]
+### Xem danh sách kì thi
+![[Xem danh sách kì thi 1.png]]
+## Quản lý bài thi
+### Đăng đề thi
+![[Đăng đề thi 1.png]]
+### Xóa đề thi
+![[Xóa đề thi 1.png]]
+### Kiểm tra đề thi
+![[Kiểm tra đề thi 1.png]]
+### Chỉnh sửa đề thi
+![[Chỉnh sửa đề thi 1.png]]
+
+## Quản lý kì thi
+### Chỉnh sửa kì thi
+
+### Import bài thi vào kì thi
+### Tạo kì thi
+![[Tạo kì thi 1.png]]
+### Thêm người quản lý vào kì thi
+
 ---
 # Biểu đồ giao tiếp
 ---

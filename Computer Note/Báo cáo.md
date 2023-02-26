@@ -1,0 +1,42 @@
+# Quy trình XD phần mềm
+- Xác định yêu cầu phần mềm
+	- Phát hiện yêu cầu
+		- Phát hiện tài toán: nêu rõ được mục tiêu / đầu ra của phần mềm, người ta dùng vào việc gì, mong muốn pm hỗ trợ mình cái gì
+		- Phát hiện yêu cầu cần 
+			- Kĩ thuật phát hiện
+				- Quan sát hiện trường
+				- Nghiên cứu tài liệu -> tìm đầu ra
+			- Kĩ thuật phỏng vấn
+				- Đối tượng 
+				- Bảng hỏi
+				- Câu hỏi mở
+			- Tập hợp, phân loại
+				- Lưu trữ, chuyển giao, biến đổi
+				- Người sử dụng - ai, làm gì
+				- Hiện tại/ Tương lai
+		- Phê phán, hiện trạng
+			- Tính đủ
+			- Hiệu năng
+		- Xác định, khoanh vùng phạm vi
+			- Các chức năng cần có để thực hiện
+			- Bổ sung thêm 
+		- Phác hoạ giải pháp
+			- Mô hình kiến trúc
+			- Nền tảng
+			- Công cụ
+	- Đặc tả yêu cầu
+		- Kĩ thuật đặc tả
+			- Hướng cấu trúc (mức chi tiết) 
+				- BD luồng dữ liệu vật lý
+				- Biểu đồ phân ra chức năng
+				- Đặc tả phụ trợ
+			- Hướng đối tượng (mức tổng quan)
+						- UC
+				- uồng kịch bản
+						- Biểu đồ activity
+
+- Phân tích yêu cầu
+- Thiết kế phần mềm
+- Cài đặt, kiểm thử
+- Bảo trì
+Thế nào là phần mềm tốt - Đáp ứng đầy đủ tính năng mà người dùng cần 
