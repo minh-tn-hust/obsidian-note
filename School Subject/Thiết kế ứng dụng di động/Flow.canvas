@@ -1,0 +1,15 @@
+{
+	"nodes":[
+		{"type":"file","file":"Thiết kế ứng dụng di động/Ôn thi cuối kì/Android tổng quan.md","id":"fe281fa49626d9d8","x":-460,"y":-480,"width":400,"height":400},
+		{"id":"a68ded1aeabd320b","x":140,"y":-480,"width":400,"height":400,"type":"file","file":"Thiết kế ứng dụng di động/Ôn thi cuối kì/Activity.md"},
+		{"id":"2436ed9e7b831674","x":780,"y":-480,"width":400,"height":400,"type":"file","file":"Thiết kế ứng dụng di động/Ôn thi cuối kì/Lifecycle.md"},
+		{"id":"c7ab3653a264410c","x":780,"y":120,"width":400,"height":400,"type":"file","file":"Thiết kế ứng dụng di động/Ôn thi cuối kì/Intent.md"},
+		{"id":"b6fb36b883c3adac","x":140,"y":120,"width":400,"height":400,"type":"file","file":"Thiết kế ứng dụng di động/Ôn thi cuối kì/Implicit intent.md"}
+	],
+	"edges":[
+		{"id":"5bdfe5932c564d45","fromNode":"fe281fa49626d9d8","fromSide":"right","toNode":"a68ded1aeabd320b","toSide":"left"},
+		{"id":"0c9a20fd546ccbbb","fromNode":"a68ded1aeabd320b","fromSide":"right","toNode":"2436ed9e7b831674","toSide":"left"},
+		{"id":"0d6d93c25adde8d1","fromNode":"2436ed9e7b831674","fromSide":"bottom","toNode":"c7ab3653a264410c","toSide":"top"},
+		{"id":"cc87c44e2ab52429","fromNode":"c7ab3653a264410c","fromSide":"left","toNode":"b6fb36b883c3adac","toSide":"right"}
+	]
+}

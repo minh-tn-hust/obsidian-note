@@ -13,19 +13,31 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Thiết kế ứng dụng di động/Ôn thi cuối kì/Intent.md",
+                "file": "Thiết kế ứng dụng di động/Ôn thi cuối kì/Menu and Picker.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "406b1b4afa8eb5d8",
+            "id": "0060cf4d01a17e72",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Thiết kế ứng dụng di động/Ôn thi cuối kì/Implicit intent.md",
+                "file": "Thiết kế ứng dụng di động/Ôn thi cuối kì/Menu and Picker.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "53e7ce7b75824c21",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Thiết kế ứng dụng di động/Ôn thi cuối kì/Android tổng quan.md",
                 "mode": "source",
                 "source": false
               }
@@ -61,7 +73,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "Intent.ACTION",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -82,8 +94,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "04bc5fc1716cb275",
@@ -99,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Thiết kế ứng dụng di động/Ôn thi cuối kì/Implicit intent.md",
+                "file": "Thiết kế ứng dụng di động/Ôn thi cuối kì/Menu and Picker.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Thiết kế ứng dụng di động/Ôn thi cuối kì/Implicit intent.md",
+                "file": "Thiết kế ứng dụng di động/Ôn thi cuối kì/Menu and Picker.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -139,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Thiết kế ứng dụng di động/Ôn thi cuối kì/Implicit intent.md"
+                "file": "Thiết kế ứng dụng di động/Ôn thi cuối kì/Menu and Picker.md"
               }
             }
           }
@@ -160,12 +171,25 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "406b1b4afa8eb5d8",
+  "active": "0060cf4d01a17e72",
   "lastOpenFiles": [
-    "Thiết kế ứng dụng di động/Ôn thi cuối kì/Intent.md",
-    "Thiết kế ứng dụng di động/Ôn thi cuối kì/Lifecycle.md",
-    "Thiết kế ứng dụng di động/Ôn thi.md",
+    "Pasted image 20230224035413.png",
+    "Thiết kế ứng dụng di động/Ôn thi cuối kì/Spinner.md",
+    "Thiết kế ứng dụng di động/Ôn thi cuối kì/Các thuộc tính.md",
+    "Thiết kế ứng dụng di động/Ôn thi cuối kì/Menu and Picker.md",
+    "Thiết kế ứng dụng di động/Ôn thi cuối kì/Android tổng quan.md",
+    "Pasted image 20230223235854.png",
+    "Pasted image 20230223235843.png",
     "Thiết kế ứng dụng di động/Ôn thi cuối kì/Activity.md",
+    "Thiết kế ứng dụng di động/Ôn thi cuối kì/Implicit intent.md",
+    "Thiết kế ứng dụng di động/Flow.canvas",
+    "Thiết kế ứng dụng di động/Ôn thi cuối kì/Intent.md",
+    "Thiết kế ứng dụng di động/Ôn thi cuối kì/Button và clickable images.md",
+    "Thiết kế ứng dụng di động/Ôn thi cuối kì/Lifecycle.md",
+    "Pasted image 20230223233204.jpg",
+    "Pasted image 20230223233148.jpg",
+    "Pasted image 20230223212330.png",
+    "Thiết kế ứng dụng di động/Ôn thi.md",
     "Thiết kế ứng dụng di động/Ôn thi cuối kì.md",
     "Phát triển ứng dụng đa nền tảng/Đa nền tảng với Cloud Computing.md",
     "Thiết kế và xây dựng phần mềm/Bài tập lớn.md",
