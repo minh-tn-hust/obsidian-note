@@ -451,3 +451,53 @@ Hệ thống gọi *onPause()* khi mà *Activity* di chuyển vào trạng thái
 Phương thức *onPause()* nên được thực thi nhanh chóng, dừng dùng onPause() cho các hoạt động sử dụng nhiều CPU chẳng hạn như ghi dữ liệu vào cơ sở dữ liệu. AApp có thể vẫn còn hiển thị trên màn hình và có thể đi qua trạng thái tạm dừng, và bất kì độ trễ nào khi thực thi *onPause()* có thể làm chậm quá trình chuyển sang *Activity* mới. Triển khai bất kì hoạt động nặng khi app ở trạng thái stoped
 
 Đối vói API 24, *Activity* bị pause vẫn có thể hiển thị trên màn hình, trong trường hợp này bạn muốn dừng các haotj cảnh /video và bạn vẫn muốn nhìn thấy *Activity*, bạn có thể sử dụng *inMultiWindowMode()* để thử khi app của bạn chạy trong chế độ nhiều cửa sổ
+
+### Activity dừng : onStop()
+```java
+@Override
+protected void onStop() {
+    super.onStop();
+    // The activity is no longer visible (it is now "stopped")
+}
+```
+
+Một *Activity*  trong trạng thái dừng là khi nó không còn được hiển thị trên màn hình nữa. Điều này thường bởi vì người dừng đã bắt đầu một hoạt động khác hoặc là trở lại màn hình chính. Hệ thống Android giữ lại thể hiện của *Activity* trong back stack, nếu như người dùng trợ lại hoạt động này, hệ thống sẽ restart nó lại. Nếu như tài nguyên thấp, hệ thống có thể huỷ luôn trạng thái stop.
+
+### Activity huỷ :  onDestroy()
+```java
+@Override
+protected void onDestroy() {
+    super.onDestroy();
+    // The activity is about to be destroyed.
+}
+```
+Khi *Activity* bị huỷ, nó bị chấm dứ hoàn toàn, và thể hiện của *Activity* được lấy lại bở hệ thống. Điều này xảy ra ở nhiều trường họp
+- Bạn gọi *finish()* trong *Activity* để tắt nó một cách bình thường
+- Người dùng navigate trở lại trạng thái trước
+- Thiết bị hiện tại đang trong tình trạng ít bộ nhớ, nơi mà hệ thống lấy lại bất kì hoạt động nào đang dừng để có thể mở rộng tài gnuyeen hệ thống
+- Câu hình thiết bị bị thay đổi
+
+Sử dụng *onDestroy()* gần như xoá hoàn toàn bởi vậy không có thành phần nào đang chạy sau khi *Activity* ị phá huỷ
+
+Chú ý răng trong tường hợp khi mà hệ thống bị hạn bởi hoạt động host  đối với *Activity* mà không gọi phương thức này, bởi vậy bạn không nên sử dụng onDestroy() để lưu bất kì trạng thái data cần thiết nào của *Activity*. Sử dụng *onPause()* hoặc là *onStop()*
+
+### Hoạt động restart : onRestart()
+```java
+@Override
+protected void onRestart() {
+    super.onRestart();
+    // The activity is about to be restarted.
+}
+```
+
+Trạng thái restart là một chuyển trạng thái mà xảy ra khi một *Activity* bị tạm dựng bắt đầu lại. Trong trường hợp này, *onRestart()*  được gọi giữa *onStop()* và *onStart()*. Nếu như bạn có resource cầnp ahir dùng ./ bắt đầu, các hành vi đó xảy ra ontr *onStop()* hoặc là *onStart()* hay hơn là ở trong *onRestart()*
+
+#### Cấu hình thay đổi và trạng thái của *Activity*
+Ở section trướcn, trong *onDestroy()* bạn học được rằng *Activity* có thể bị phá huỷ khi nà người dùng navigate trở lại haowcj là xảy ra khi code thực thi *finish()* haowcj alf hệ thống muốn free tài nguyêm. Một các khác để một *Activity* có thể bị phá huỷ là khi thiết bị thay đổi cầu hình
+
+Cấu hình thay đổi xảy ra trên thiết bị, trong runtime, và vô hiệu hoá bố cục hiện tại và các tài nguyên khác trong *Activity* của bạn. Thông thường, cấu hình thay đổi khi mà thiết bị thực hiện xoay. Khi thiết bị xoay từ ngang thành dọc hoặc ngược lại, bố cục của app cần được thay đổi. Hệ thống rẽ tạo lại *Activity* để giúp cho *Activity* thích ứng với cáu hình mới bằng cách load các nguồn tài nguyên thay thế. 
+
+Khi mà cấu hình thay đổi xảy ra, hệ thống Android tắt hoạt động của bạn và gọi lần lượt *onPause()*, *onStop()* , *onDestroy()*. Khi mà hệ thôgns khởi taọ lại activity từ ban đầu gọi *onCreate()*, *óntart()*, *onResume()*
+
+### Lưu trữ và phục hồi dữ liệu
+

@@ -55,4 +55,13 @@ Các điểm quyết định
 
 #### Bao phủ tập lệnh
 Các lệnh dược đi qua một lần
- 
+
+# GACC : General Active Clause Coverage
+Laf tiêu chí phụ được đưa ra để kết hợp với ACC để cho các giá trị cho mệnh đề phụ khi có sự nhập nhằng
+- Thỏa mãn ACC
+- Xác định các giá trị của mệnh đề phụ
+	- Với mọi mệnh đề phụ Cj là mệnh đề phụ khi xem xét Ci là mệnh đề chính
+		- Cj(Ci = true) = Cj(Ci = false) với mọi Cj
+		- Cj(Ci = true) != Cj(Ci = false) với mọi Cj
+
+
