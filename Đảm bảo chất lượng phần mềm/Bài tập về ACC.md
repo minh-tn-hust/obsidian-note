@@ -27,6 +27,7 @@ y % 4 == 0 => b
 y % 100 != 0 => c
 P = a v (b ^ c)
 Bảng chân lý
+
 ##### Đối với a là mệnh đề chinh
 
 

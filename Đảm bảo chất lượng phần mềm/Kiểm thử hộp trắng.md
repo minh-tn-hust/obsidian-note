@@ -53,7 +53,7 @@
 >- cj(ci = true) = cj(ci = false) đối với tất cả cj 
 >  hoặc
 >  cj(ci = true) != cj(ci = false) đối với tất cả cj
->  Lấy các bộ test case từ ACC thỏa mãn có cj khác nhau hoặc giống nhau là được, không cần phải quan tâm giá trị của P có khác nhau hay không
+>  **Lấy các bộ test case từ ACC thỏa mãn có cj khác nhau hoặc giống nhau là được, không cần phải quan tâm giá trị của P có khác nhau hay không**
 
 **NOTE**: GACC thỏa mãn được CC nhưng không thỏa mãn được PC
 
@@ -63,13 +63,13 @@
 >- Các giá trị được chọn cho các mệnh đề phụ cj phải khiến P đúng với một giá trị của mệnh đề chính ci và sai đối với giá trị khác của ci
 >- P(ci = true) != P(ci = false)
 >- Các mệnh đề phụ không cần phải giống nhau
->Lấy các cặp test case từ GACC có các giá trị P khác nhau là được
+**>Lấy các cặp test case từ GACC có các giá trị P khác nhau là được**
 
 ## RACC
 >- Vói mối mện đề P, mới mỗi mệnh đề chính ci trong P, chọn mệnh đề phụ cj sao cho ci quyết đinh P. ci đánh giá bằng cả giá trị true và false trong các test case
 >- P đánh giá true trong một test case của mệnh đề chính và false trong các trường hợp còn lại
 >- Giá trị chọn jcho mênh đề phụ cj phải giống nhau khi ci được đánh giá true cũng như là lúc được đánh giá false
->Lấy các cặp test case từ CACC mà có các giá trị cj giống hệt nhau
+>**Lấy các cặp test case từ CACC mà có các giá trị cj giống hệt nhau**
 
 
 # Kiểm thử luồng điều khiển
