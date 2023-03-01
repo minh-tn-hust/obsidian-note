@@ -49,8 +49,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Kiểm thử hộp trắng.md",
-                "mode": "source",
+                "file": "Các độ đo phần mềm.md",
+                "mode": "preview",
                 "source": false
               }
             }
@@ -122,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Kiểm thử hộp trắng.md",
+                "file": "Các độ đo phần mềm.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Kiểm thử hộp trắng.md",
+                "file": "Các độ đo phần mềm.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Kiểm thử hộp trắng.md"
+                "file": "Các độ đo phần mềm.md"
               }
             }
           }
@@ -185,12 +185,13 @@
   },
   "active": "7e85dfa99dc944a3",
   "lastOpenFiles": [
-    "Kiểm thử hộp đen.md",
-    "Độ đo OOP.md",
-    "Các độ đo phần mềm.md",
     "Các bài tập cần chú ý.md",
     "Kiểm thử hộp trắng.md",
+    "Độ đo OOP.md",
+    "Độ đo OOP.pdf",
+    "Các độ đo phần mềm.md",
     "Bài tập về ACC.md",
+    "Kiểm thử hộp đen.md",
     "Pasted image 20230228235150.png"
   ]
 }

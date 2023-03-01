@@ -91,7 +91,7 @@ private class myReceiver extends BroadcastReceiver {
 }
 ```
 
-Phương thức `onReceive()` được gọi khi app nhận được một *Intent* broadcast đã đăng kí. Phương thức `onReceive()` chạy trong luồng chính, nếu như không có một câu hỏi tưởng minh răng nó phải chạy trên một luồng khác trong `registerReceiver`
+Phương thức `onReceive()` được gọi khi app nhận được một *Intent* broadcast đã đăng kí. ==Phương thức `onReceive()` chạy trong luồng chính,== nếu như không có một câu hỏi tưởng minh răng nó phải chạy trên một luồng khác trong `registerReceiver`
 
 Phương thức `onReceive()` có thời gian giớ hạn là 10s. Sau 10s hệ thống android xem xét để khóa receiver lại, và hệ thống có thể hiển thị cho user răng "application not responding". Bởi lý do này, không nên triển khai các hoạt động tốn thời gian ở `onReceive()`
 

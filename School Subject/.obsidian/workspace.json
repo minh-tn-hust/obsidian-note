@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Thiết kế và xây dựng phần mềm/Xác định các phần tử thiết kế.md",
+                "file": "Đảm bảo chất lượng phần mềm/Kiểm thử hộp trắng.md",
                 "mode": "source",
                 "source": false
               }
@@ -184,14 +184,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Thiết kế ứng dụng di động/Đáp án.md",
+                "file": "Đảm bảo chất lượng phần mềm/Kiểm thử hộp đen.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 14
+        ]
       }
     ],
     "direction": "vertical"
@@ -257,7 +256,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Thiết kế ứng dụng di động/Đáp án.md",
+                "file": "Đảm bảo chất lượng phần mềm/Kiểm thử hộp trắng.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -274,7 +273,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Thiết kế ứng dụng di động/Đáp án.md",
+                "file": "Đảm bảo chất lượng phần mềm/Kiểm thử hộp trắng.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -297,7 +296,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Thiết kế ứng dụng di động/Đáp án.md"
+                "file": "Đảm bảo chất lượng phần mềm/Kiểm thử hộp trắng.md"
               }
             }
           }
@@ -318,21 +317,29 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "e6cdb4d48cecd46a",
+  "active": "44f25f64d1765c1d",
   "lastOpenFiles": [
+    "Đảm bảo chất lượng phần mềm/Phân chia lớp tương đương.md",
+    "Đảm bảo chất lượng phần mềm/Kiểm thử hộp trắng.md",
+    "Thiết kế và xây dựng phần mềm/Xác định các phần tử thiết kế.md",
+    "Đảm bảo chất lượng phần mềm/Kiểm thử hộp đen.md",
     "Thiết kế ứng dụng di động/Broadcasts.md",
+    "Thiết kế ứng dụng di động/Flow.canvas",
+    "Thiết kế ứng dụng di động/Drawable.md",
     "Thiết kế ứng dụng di động/Đáp án.md",
+    "Thiết kế ứng dụng di động/Người dùng di chuyển.md",
     "Thiết kế ứng dụng di động/Internet.md",
+    "Thiết kế ứng dụng di động/Ôn thi cuối kì/Intent.md",
+    "Thiết kế ứng dụng di động/Ôn thi cuối kì/Android tổng quan.md",
+    "Thiết kế ứng dụng di động/Fragment.md",
+    "Thiết kế ứng dụng di động/Ôn thi cuối kì/Lifecycle.md",
+    "Thiết kế ứng dụng di động/Ôn thi cuối kì/Menu and Picker.md",
     "Thiết kế ứng dụng di động/Ôn thi cuối kì/Activity.md",
     "Thiết kế ứng dụng di động/Ôn thi cuối kì/Button và clickable images.md",
-    "Thiết kế ứng dụng di động/Ôn thi cuối kì/Android tổng quan.md",
     "Thiết kế ứng dụng di động/Services.md",
     "Untitled.canvas",
     "Thiết kế ứng dụng di động/Ôn thi cuối kì/Implicit intent.md",
-    "Thiết kế ứng dụng di động/Ôn thi cuối kì/Lifecycle.md",
     "Thiết kế ứng dụng di động/AsyncTask.md",
-    "Thiết kế ứng dụng di động/Drawable.md",
-    "Thiết kế ứng dụng di động/Người dùng di chuyển.md",
     "Thiết kế ứng dụng di động/Ôn thi.md"
   ]
 }

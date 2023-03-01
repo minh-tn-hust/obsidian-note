@@ -92,10 +92,19 @@
 
 ## Các tiêu chí kiểm thử bao phủ luồng dữ liệu
 ### All-defs coverage: **bao phủ tất cả các điểm định nghĩa trên đồ thị**
+>Đối với mọi điểm def(x) trên đồ thị, tồn tài một đường def_clear_path đi qua đỉnh đấy
+
 ### All-uses coverage: **bao phủ các điểm sử dụng dữ liệu trên đồ thị**
+>Đối với mọi điểm use(X) trên đồ thị, phải bao phủ được tất cả các cặp DU_pair mà nó có
+
 ### All-du-paths coverage: **bao phủ tất cả các đường dẫn DU trên đồ thị**
+>
 
 
+##### DU-Path
+- Một đường dẫn <n1, n2, ..., nj, nk/> là một du-path gắn với biến v, nếu như biến v được định nghãi ở node n1
+	- Có c-use(v) ở node nk và <n1, n2, ...., nj, nk/> là một def-clear-path
+	- Có p-use(v) tại cạnh <nj, nk.> và <n1, n2, ..., nj> là một def-clear-path 
 
 
 
