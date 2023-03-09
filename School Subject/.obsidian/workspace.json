@@ -13,77 +13,25 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Thiết kế ứng dụng di động/Services.md",
+                "file": "Thiết kế và xây dựng phần mềm/Chữa đề thi/TKXDPM-K64-P1.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "9fc9786543c24bb8",
+            "id": "23f3b08d8fef9947",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Thiết kế và xây dựng phần mềm/Ôn thi/Nguyên lý thiết kế.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "85740b1d4f742871",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Thiết kế và xây dựng phần mềm/Ôn thi/Nguyên lý Solid.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "ace8a8420960b20a",
-            "type": "leaf",
-            "state": {
-              "type": "canvas",
-              "state": {
-                "file": "Untitled.canvas",
-                "viewState": {
-                  "x": 238.08000000000007,
-                  "y": 22.32,
-                  "zoom": 0
-                }
-              }
-            }
-          },
-          {
-            "id": "fb392a6c132e965c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Thiết kế ứng dụng di động/Broadcasts.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "e6cdb4d48cecd46a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Đảm bảo chất lượng phần mềm/Kiểm thử hộp đen.md",
+                "file": "Thiết kế và xây dựng phần mềm/Ôn thi/Biểu đồ.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -133,8 +81,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 310.5,
-    "collapsed": true
+    "width": 310.5
   },
   "right": {
     "id": "04bc5fc1716cb275",
@@ -150,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Thiết kế và xây dựng phần mềm/Ôn thi/Nguyên lý Solid.md",
+                "file": "Thiết kế và xây dựng phần mềm/Chữa đề thi/TKXDPM-K64-P1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -167,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Thiết kế và xây dựng phần mềm/Ôn thi/Nguyên lý Solid.md",
+                "file": "Thiết kế và xây dựng phần mềm/Chữa đề thi/TKXDPM-K64-P1.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -190,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Thiết kế và xây dựng phần mềm/Ôn thi/Nguyên lý Solid.md"
+                "file": "Thiết kế và xây dựng phần mềm/Chữa đề thi/TKXDPM-K64-P1.md"
               }
             }
           }
@@ -211,11 +158,15 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "85740b1d4f742871",
+  "active": "b9037108e2663d5c",
   "lastOpenFiles": [
-    "Thiết kế và xây dựng phần mềm/Ôn thi/Nguyên lý thiết kế.md",
     "Thiết kế và xây dựng phần mềm/Ôn thi/Nguyên lý Solid.md",
+    "Thiết kế và xây dựng phần mềm/Ôn thi/Biểu đồ.md",
+    "Thiết kế và xây dựng phần mềm/Chữa đề thi/TKXDPM-K64-P1.md",
     "Thiết kế ứng dụng di động/Services.md",
+    "Thiết kế và xây dựng phần mềm/Ôn thi/Nguyên lý thiết kế.md",
+    "Thiết kế và xây dựng phần mềm/Chữa đề thi",
+    "Untitled.canvas",
     "Thiết kế và xây dựng phần mềm/Ôn thi",
     "Thiết kế ứng dụng di động/Broadcasts.md",
     "Thiết kế ứng dụng di động/Internet.md",
@@ -238,9 +189,6 @@
     "Đảm bảo chất lượng phần mềm/Kiểm thử hộp trắng.md",
     "Đảm bảo chất lượng phần mềm/Phân chia lớp tương đương.md",
     "Thiết kế và xây dựng phần mềm/Xác định các phần tử thiết kế.md",
-    "Đảm bảo chất lượng phần mềm/Kiểm thử hộp đen.md",
-    "Thiết kế ứng dụng di động/Người dùng di chuyển.md",
-    "Thiết kế ứng dụng di động/Ôn thi cuối kì/Android tổng quan.md",
-    "Untitled.canvas"
+    "Đảm bảo chất lượng phần mềm/Kiểm thử hộp đen.md"
   ]
 }
