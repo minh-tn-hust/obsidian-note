@@ -399,3 +399,82 @@ pulic void ToyBuilder {
 
 
 # D - Dependency Inversion Principle
+>Module này phụ thuộc vào module khác thì phải phụ thuộc vào abstractions chứ không phải phụ thuộc vào các implements. Nói cách khác nó khuyến khích sử dụng
+>Dependency Injection để đảm bảo module có thể dễ dàng thay dododir, bổ sung hoặc loại bỏ các dependencey của chúng mà không ảnh hưởng
+
+Xem ví dụ dưới đây
+```java
+public class UserController {
+	private UserRepsitory userRepository;
+
+	public UserController() {
+		userRepository = new UserRepository();
+	}
+
+	public User getUser(int userId) {
+		return userRepository.getUser(userId);
+	}
+
+	public void addUser(User user) {
+		userRepository.addUser(user);
+	}
+
+	public void updateUser(User user) {
+		userRepository.updateUser(user);
+	}
+
+	public void deleteUser(int userId) {
+		userRepository.deleteUser(userId)
+	}
+}
+```
+
+Việc triển khai code như trên khiến cho UserController phụ thuộc rất nhiều vào lớp UserRepository. Giả sử lớp UserRepository bị thay đổi hoặc thay thế bởi một cơ chế khác, thì lớp UserController cũng bị thay đổi theo.
+Ta mong muốn, khi UserRepository bị thay đổi, không cần phải sửa lại lớp UserController (ví dụ UserRepository getUser bằng phương thức `.getUser()` nhưng khi đổi sang một cái mới sẽ ví dụ như `MongoDBRepository` không còn phương thức này nữa, bắt buộc chúng ta phải đi vào code của UserControlle để thay đổi, đây là điều chúng ta không mong muốn)
+-> Vi phạm nguyên lý DIP
+
+Các khác phục: Sử dụng DI (Dependency Injection)
+```java
+interface IRepository {
+	User getUser();
+	void updateUser();
+	void deleteUser();
+	void addUser();
+	void getUser();
+}
+
+class UserRepository implements IRepository{
+}
+
+class UserController {
+	IRepository userRepository;
+	public UserController(IRepository repository) {
+		userRepository = repository;
+	}
+
+	public User getUser(int userId) {
+		return userRepository.getUser(userId);
+	}
+
+	public void addUser(User user) {
+		userRepository.addUser(user);
+	}
+
+	public void updateUser(User user) {
+		userRepository.updateUser(user);
+	}
+
+	public void deleteUser(int userId) {
+		userRepository.deleteUser(userId)
+	}
+}
+```
+Sau khi sửa lại, cả hai lớp `UserRepository` và `UserController` phụ thuộc vào nhau thông qua Interface `IRepository`, việc triển khai của lớp *UserRepository*  như thế nào không còn ảnh hưởng đến *UserController* nữa
+
+
+
+
+
+
+
+
