@@ -8,144 +8,36 @@
         "type": "tabs",
         "children": [
           {
-            "id": "44f25f64d1765c1d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Đảm bảo chất lượng phần mềm/Kiểm thử hộp trắng.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "19f105d686ba3244",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Đảm bảo chất lượng phần mềm/Kiểm thử hộp trắng.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "5e05cd3cf003fb24",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Phát triển ứng dụng đa nền tảng/React Native.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "3afc8da972fe4a1c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Thiết kế ứng dụng di động/Ôn thi.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "eb628e6172236919",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Thiết kế ứng dụng di động/Người dùng di chuyển.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "4b5131203d79b604",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Thiết kế ứng dụng di động/Người dùng di chuyển.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "8b6cd2b678b333a3",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Thiết kế ứng dụng di động/Drawable.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "357009d981248e99",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Thiết kế ứng dụng di động/UI Thread.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "ffa6380226ab1674",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Thiết kế ứng dụng di động/AsyncTask.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "cb45e36e2d2d94a2",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Thiết kế ứng dụng di động/Internet.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "03f32472c07fb331",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Thiết kế ứng dụng di động/Broadcasts.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "b9037108e2663d5c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
                 "file": "Thiết kế ứng dụng di động/Services.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "9fc9786543c24bb8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Thiết kế và xây dựng phần mềm/Ôn thi/Nguyên lý thiết kế.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "85740b1d4f742871",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Thiết kế và xây dựng phần mềm/Ôn thi/Nguyên lý Solid.md",
                 "mode": "source",
                 "source": false
               }
@@ -190,7 +82,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -240,7 +133,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 310.5
+    "width": 310.5,
+    "collapsed": true
   },
   "right": {
     "id": "04bc5fc1716cb275",
@@ -256,7 +150,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Đảm bảo chất lượng phần mềm/Kiểm thử hộp trắng.md",
+                "file": "Thiết kế và xây dựng phần mềm/Ôn thi/Nguyên lý Solid.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -273,7 +167,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Đảm bảo chất lượng phần mềm/Kiểm thử hộp trắng.md",
+                "file": "Thiết kế và xây dựng phần mềm/Ôn thi/Nguyên lý Solid.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -296,7 +190,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Đảm bảo chất lượng phần mềm/Kiểm thử hộp trắng.md"
+                "file": "Thiết kế và xây dựng phần mềm/Ôn thi/Nguyên lý Solid.md"
               }
             }
           }
@@ -317,29 +211,36 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "44f25f64d1765c1d",
+  "active": "85740b1d4f742871",
   "lastOpenFiles": [
-    "Đảm bảo chất lượng phần mềm/Phân chia lớp tương đương.md",
+    "Thiết kế và xây dựng phần mềm/Ôn thi/Nguyên lý thiết kế.md",
+    "Thiết kế và xây dựng phần mềm/Ôn thi/Nguyên lý Solid.md",
+    "Thiết kế ứng dụng di động/Services.md",
+    "Thiết kế và xây dựng phần mềm/Ôn thi",
+    "Thiết kế ứng dụng di động/Broadcasts.md",
+    "Thiết kế ứng dụng di động/Internet.md",
+    "Thiết kế ứng dụng di động/AsyncTask.md",
+    "Thiết kế ứng dụng di động/UI Thread.md",
+    "Thiết kế ứng dụng di động/Drawable.md",
+    "Thiết kế ứng dụng di động/Ôn thi cuối kì/Intent.md",
+    "Thiết kế ứng dụng di động/Ôn thi cuối kì/Implicit intent.md",
+    "Thiết kế ứng dụng di động/Ôn thi cuối kì/Các thuộc tính.md",
+    "Thiết kế ứng dụng di động/Ôn thi cuối kì/Button và clickable images.md",
+    "Thiết kế ứng dụng di động/Ôn thi cuối kì/Activity.md",
+    "Thiết kế ứng dụng di động/Flow.canvas",
+    "Báo cáo đánh giá.md",
+    "Kiểm thử luồng dư liệu.md",
+    "Thiết kế ứng dụng di động/Ôn thi.md",
+    "Thiết kế ứng dụng di động/Ôn thi cuối kì/Spinner.md",
+    "Thiết kế ứng dụng di động/Đáp án.md",
+    "Thiết kế ứng dụng di động/Ôn thi cuối kì/Menu and Picker.md",
+    "Thiết kế ứng dụng di động/Ôn thi cuối kì/Lifecycle.md",
     "Đảm bảo chất lượng phần mềm/Kiểm thử hộp trắng.md",
+    "Đảm bảo chất lượng phần mềm/Phân chia lớp tương đương.md",
     "Thiết kế và xây dựng phần mềm/Xác định các phần tử thiết kế.md",
     "Đảm bảo chất lượng phần mềm/Kiểm thử hộp đen.md",
-    "Thiết kế ứng dụng di động/Broadcasts.md",
-    "Thiết kế ứng dụng di động/Flow.canvas",
-    "Thiết kế ứng dụng di động/Drawable.md",
-    "Thiết kế ứng dụng di động/Đáp án.md",
     "Thiết kế ứng dụng di động/Người dùng di chuyển.md",
-    "Thiết kế ứng dụng di động/Internet.md",
-    "Thiết kế ứng dụng di động/Ôn thi cuối kì/Intent.md",
     "Thiết kế ứng dụng di động/Ôn thi cuối kì/Android tổng quan.md",
-    "Thiết kế ứng dụng di động/Fragment.md",
-    "Thiết kế ứng dụng di động/Ôn thi cuối kì/Lifecycle.md",
-    "Thiết kế ứng dụng di động/Ôn thi cuối kì/Menu and Picker.md",
-    "Thiết kế ứng dụng di động/Ôn thi cuối kì/Activity.md",
-    "Thiết kế ứng dụng di động/Ôn thi cuối kì/Button và clickable images.md",
-    "Thiết kế ứng dụng di động/Services.md",
-    "Untitled.canvas",
-    "Thiết kế ứng dụng di động/Ôn thi cuối kì/Implicit intent.md",
-    "Thiết kế ứng dụng di động/AsyncTask.md",
-    "Thiết kế ứng dụng di động/Ôn thi.md"
+    "Untitled.canvas"
   ]
 }

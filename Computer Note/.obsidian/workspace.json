@@ -11,8 +11,12 @@
             "id": "5f341fde9cec9257",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Startup Todo/Computer/Các công việc cần làm khi thực hiện mở một máy mới.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -81,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Startup Todo/Computer/Các công việc cần làm khi thực hiện mở một máy mới.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Startup Todo/Computer/Các công việc cần làm khi thực hiện mở một máy mới.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +124,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Startup Todo/Computer/Các công việc cần làm khi thực hiện mở một máy mới.md"
+              }
             }
           }
         ]
@@ -138,6 +146,6 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "5f341fde9cec9257",
+  "active": "9edce70cd67996df",
   "lastOpenFiles": []
 }
