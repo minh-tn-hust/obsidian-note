@@ -105,6 +105,9 @@ Về mức độ couping,  khi mà lớp không phụ thuộc vào lớp nào kh
 Về cohesion, trong lớp thực hiện nhiều nhiệm vụ dẫn tới low cohesion
 
 b. 
+![[FriendModel.png]]
+
+![[FriendModel 1.png]]
 
 
 
