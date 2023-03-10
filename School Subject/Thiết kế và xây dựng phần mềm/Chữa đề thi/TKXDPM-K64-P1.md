@@ -12,7 +12,6 @@ class A {
 			b2.m3();
 			return;
 		}
-		this.b1.m4();
 	}
 
 
@@ -29,9 +28,12 @@ class B {
 		b2 = new B();
 		a.X(b2);
 		this.m4();
-		b2.m5();
+		c.m5();
 	}
-
+	public void m4() {
+	}
+	public void m3() {
+	}
 }
 
 class C {
@@ -106,6 +108,7 @@ Về cohesion, trong lớp thực hiện nhiều nhiệm vụ dẫn tới low co
 
 b. 
 ![[FriendModel.png]]
+
 
 ![[FriendModel 1.png]]
 
